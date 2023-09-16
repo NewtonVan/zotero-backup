@@ -1,0 +1,426 @@
+
+Skip to content
+
+    apecloud /
+    wesql-scale
+
+Sign in to Sourcegraph
+Type / to search
+Command palette
+Create new...
+Issues
+Pull requests
+You have unread notifications
+
+    Code
+    Issues 27
+    Pull requests 3
+    Discussions
+    Actions
+    Projects 3
+    Wiki
+    Security
+    Insights
+
+More
+
+    Code
+    Issues
+    Pull requests
+    Discussions
+    Actions
+    Projects
+    Wiki
+    Security
+    Insights
+
+{{ message }}
+/   ...   /  
+apecloud   /   wesql-scale   /  
+Clear Command Palette
+Tip: Type # to search pull requests
+Type ? for help and tips
+Tip: Type # to search issues
+Type ? for help and tips
+Tip: Type # to search discussions
+Type ? for help and tips
+Tip: Type ! to search projects
+Type ? for help and tips
+Tip: Type @ to search teams
+Type ? for help and tips
+Tip: Type @ to search people and organizations
+Type ? for help and tips
+Tip: Type > to activate command mode
+Type ? for help and tips
+Tip: Go to your accessibility settings to change your keyboard shortcuts
+Type ? for help and tips
+Tip: Type author:@me to search your content
+Type ? for help and tips
+Tip: Type is:pr to filter to pull requests
+Type ? for help and tips
+Tip: Type is:issue to filter to issues
+Type ? for help and tips
+Tip: Type is:project to filter to projects
+Type ? for help and tips
+Tip: Type is:open to filter to open content
+Type ? for help and tips
+We’ve encountered an error and some results aren't available at this time. Type a new search or try again later.
+No results matched your search
+Top result
+Commands Type > to filter
+Global Commands Type > to filter
+This Page
+Files
+Pages
+Access Policies
+Organizations
+Repositories
+Issues, pull requests, and discussions Type # to filter
+Teams
+Users
+Projects
+Projects (classic)
+Modes
+Use filters in issues, pull requests, discussions, and projects
+Search for issues and pull requests # Search for issues, pull requests, discussions, and projects # Search for organizations, repositories, and users @ Search for projects ! Search for files / Activate command mode > Search your issues, pull requests, and discussions # author:@me Search your issues, pull requests, and discussions # author:@me Filter to pull requests # is:pr Filter to issues # is:issue Filter to discussions # is:discussion Filter to projects # is:project Filter to open issues, pull requests, and discussions # is:open
+Create list
+
+Create a list to organize your starred repositories.
+
+Name .
+
+32 remaining
+
+Description .
+
+160 remaining
+.
+Create
+
+Tip: type : to add emoji to the name or description.
+Beta Lists are currently in beta. Share feedback and report bugs.
+Owner avatar wesql-scale Private
+
+    Unwatch Stop ignoring Watch 5
+    Notifications
+    Participating and @mentions
+    Only receive notifications from this repository when participating or @mentioned.
+    All Activity
+    Notified of all notifications on this repository.
+    Ignore
+    Never be notified.
+    Custom
+    Select events you want to be notified of in addition to participating and @mentions.
+    Get push notifications on iOS or Android .
+    Custom
+    Custom
+    Select events you want to be notified of in addition to participating and @mentions.
+    Issues
+    Pull requests
+    Releases
+    Discussions
+    Security alerts
+    Apply Cancel
+    Fork 1 Fork your own copy of apecloud/wesql-scale
+    Unstar this repository?
+
+    This will remove {{ repoNameWithOwner }} from the {{ listsWithCount }} that it's been added to.
+    Unstar
+    Lists
+    Star 4
+    Lists
+
+Notifications
+Participating and @mentions
+Only receive notifications from this repository when participating or @mentioned.
+All Activity
+Notified of all notifications on this repository.
+Ignore
+Never be notified.
+Custom
+Select events you want to be notified of in addition to participating and @mentions.
+Get push notifications on iOS or Android .
+Custom
+Select events you want to be notified of in addition to participating and @mentions.
+Issues
+Pull requests
+Releases
+Discussions
+Security alerts
+Apply Cancel
+Open in github.dev Open in a new github.dev tab Open in codespace
+apecloud/wesql-scale
+main
+Switch branches/tags
+Branches Tags
+Could not load branches
+Create branch: {{ refName }} from ‘main’
+{{ refName }} default
+View all branches
+Could not load tags
+Nothing to show
+{{ refName }} default
+View all tags
+21 branches 2 tags
+Go to file Add file
+
+    Go to file
+    Create new file
+    Upload files
+
+Code
+
+    Local
+    Codespaces
+
+    Clone
+    HTTPS
+    SSH
+    GitHub CLI
+
+    Use Git or checkout with SVN using the web URL.
+
+    Use a password-protected SSH key.
+
+    Work fast with our official CLI. Learn more about the CLI .
+    Open with GitHub Desktop
+    Open with Visual Studio
+    Download ZIP
+
+Launching GitHub Desktop
+
+If nothing happens, download GitHub Desktop and try again.
+Launching GitHub Desktop
+
+If nothing happens, download GitHub Desktop and try again.
+Launching Xcode
+
+If nothing happens, download Xcode and try again.
+Launching Visual Studio Code
+
+Your codespace will open once ready.
+
+There was a problem preparing your codespace, please try again.
+Latest commit
+@lyq10085 @gerayking
+lyq10085 and gerayking Feature/support check table command and kill command ( #202 )
+…
+6210e24 last week Aug 9, 2023
+Git stats
+
+    32,316 commits
+
+Files
+Permalink
+Failed to load latest commit information.
+Type
+Name
+Latest commit message
+Commit time
+.github
+feat: fix CI ( #197 )
+last month July 13, 2023 13:13
+config
+feat: remove sql_mode restrict ( #173 )
+last month July 4, 2023 00:02
+data/ test
+Add support for certification revocation list files
+2 years ago October 13, 2021 17:17
+doc
+feat: remove sql_mode restrict ( #173 )
+last month July 4, 2023 00:02
+docker
+chore: fix mysql deb dependency ( #210 )
+last month July 19, 2023 15:33
+examples
+feat: change '_vt' to 'mysql' ( #140 )
+2 months ago June 29, 2023 14:01
+go
+Feature/support check table command and kill command ( #202 )
+last week August 9, 2023 17:59
+hack
+Revamp End-To-End Testing Framework for Better Compatibility and Read…
+3 months ago May 19, 2023 13:20
+java
+Release of v16.0.0 (#12470)
+6 months ago February 28, 2023 20:39
+misc
+chore: clean up ( #122 )
+2 months ago June 11, 2023 01:15
+proto
+fix: Permission Auth Error ( #226 )
+last week August 9, 2023 14:43
+resources
+Cleanup usage of go.rice in favor of go:embed (#10956)
+last year August 9, 2022 14:15
+support
+Fix typo
+3 years ago November 12, 2020 08:00
+test
+feat: fix CI ( #197 )
+last month July 13, 2023 13:13
+tools
+feat: change '_vt' to 'mysql' ( #140 )
+2 months ago June 29, 2023 14:01
+vitess-mixin
+feat: polish_grafana_dashboard ( #194 )
+last month July 13, 2023 14:17
+web/ vtadmin
+Schema RPC to fetch table/view definition (#12375)
+6 months ago February 21, 2023 09:32
+.checklicenseignore
+Feat/mysql caching sha2 password ( #154 )
+last month July 5, 2023 15:54
+.codeclimate.yml
+bootstrap: Install protobuf gRPC Python plugin via PyPi and do not co…
+5 years ago April 8, 2018 16:46
+.dockerignore
+add vtadmin docker image (#10543)
+last year June 26, 2022 08:02
+.gitattributes
+Cleanup usage of go.rice in favor of go:embed (#10956)
+last year August 9, 2022 14:15
+.gitignore
+Feat/mysql caching sha2 password ( #154 )
+last month July 5, 2023 15:54
+.gitmodules
+php: drop php client
+6 years ago December 5, 2017 19:37
+.golangci.yml
+Upgrade release-16.0 to go1.20.1 (#12398)
+6 months ago February 27, 2023 14:51
+CODE_OF_CONDUCT.md
+Update CODE_OF_CONDUCT.md
+5 years ago January 30, 2018 13:32
+CONTRIBUTING.md
+Change http to https for security links
+5 years ago February 16, 2019 12:41
+DCO
+Add git hook to check for DCO signoff.
+5 years ago March 1, 2018 10:55
+Dockerfile
+Re-add "Dockerfile" for base image in the root of our repository.
+6 years ago April 14, 2017 15:18
+LICENSE
+license: BSD->Apache v2.0
+6 years ago May 6, 2017 00:38
+Makefile
+feat: change '_vt' to 'mysql' ( #140 )
+2 months ago June 29, 2023 14:01
+README.md
+Update README.md
+2 months ago June 20, 2023 12:50
+bootstrap.sh
+Chore/polish example scripts ( #124 )
+2 months ago June 11, 2023 02:02
+build.env
+Chore/test pre push ( #121 )
+2 months ago June 11, 2023 00:27
+dev.env
+Fix two additional flaky test sources in endtoend tests (#11743)
+9 months ago November 16, 2022 18:25
+go.mod
+feat: refactor projection to send ( #192 )
+last month July 13, 2023 16:19
+go.sum
+feat: refactor projection to send ( #192 )
+last month July 13, 2023 16:19
+sonar-project.properties
+Handled ineffectual errors
+3 years ago June 23, 2020 23:03
+test.go
+Upgrade release-16.0 to go1.20.1 (#12398)
+6 months ago February 27, 2023 14:51
+Drop to upload your files
+Drop to upload your files
+WeSQL-Scale Features Connection Management Read Write Split Read After Write Consistency Load Balancing Getting Started Contributing License Acknowledgements
+README.md
+
+LICENSE Language
+WeSQL-Scale
+
+wesql-scale is designed to enhance the scalability, performance, security, and resilience of your applications. By managing connections, read-write-split, read-after-write-consistency, load balancing, wesql-scale offers a valuable tool for developers and database administrators.
+Features
+Connection Management
+
+wesql-scale efficiently manages connections to your database, reducing the overhead on your application and improving performance. wesql-scale relieves you of the worry of the max_connection problem in your database.
+Read Write Split
+
+wesql-scale simplify application logic by automatically routing read queries to read-only nodes and write queries to the primary node. This is achieved by parsing and analyzing SQL statements, which ensures efficient use of available resources.
+Read After Write Consistency
+
+When an application writes data to the primary node and subsequently reads it on a read-only node, wesql-scale makes sure that the data that was just written to the primary node can be accessed and read from the read-only node.
+Load Balancing
+
+The proxy intelligently routes queries to the appropriate read-only nodes using various load balancing policies. This ensures that the workload is evenly distributed across all available nodes, optimizing performance and resource utilization
+Getting Started
+
+To get started with wesql-scale, simply clone the repository and follow the installation instructions provided in the documentation.
+Contributing
+
+We welcome contributions to wesql-scale! If you have any ideas, bug reports, or feature requests, please feel free to open an issue or submit a pull request.
+License
+
+wesql-scale is released under the Apache 2.0 License.
+Acknowledgements
+
+wesql-scale is a fork of the Vitess project, which is a database clustering system for horizontal scaling of MySQL. We would like to thank the Vitess team for their hard work.
+About
+
+WeSQL-Scale is a database clustering system for horizontal scaling of ApeCloud MySQL. CodeBase forked by Vitess
+Resources
+Readme
+License
+Apache-2.0 license
+Code of conduct
+Code of conduct
+Activity
+Stars
+4 stars
+Watchers
+5 watching
+Forks
+1 fork
+Releases
+2 tags
+Create a new release
+Packages 0
+No packages published
+Publish your first package
+Contributors 7
+
+    @earayu
+    @gerayking
+    @kubeJocker
+    @ZhaoDiankui
+    @lyq10085
+    @jairuigou
+    @cnut
+
+Languages
+
+    Go 91.7%
+    Java 3.8%
+    TypeScript 2.1%
+    Shell 0.7%
+    Yacc 0.6%
+    Jsonnet 0.5%
+    Other 0.6%
+
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+
+    Terms
+    Privacy
+    Security
+    Status
+    Docs
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
+You can’t perform that action at this time.

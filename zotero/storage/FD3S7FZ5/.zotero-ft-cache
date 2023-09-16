@@ -1,0 +1,143 @@
+
+Skip to Header Skip to Search Skip to Content Skip to Footer
+Skip to main content
+Microsoft
+Research
+
+    Our research
+    Programs & events
+    Blogs & podcasts
+    About
+    Sign up: Research Newsletter
+
+    All Microsoft
+
+Search Search Microsoft Research
+
+The Part-Time Parliament
+
+    Leslie Lamport
+
+ACM Transactions on Computer Systems 16, 2 (May 1998), 133-169. Also appeared as SRC Research Report 49. This paper was first submitted in 1990, setting a personal record for publication delay that has since been broken by [60]. | May 1998
+
+ACM SIGOPS Hall of Fame Award in 2012
+Download BibTex
+
+A fault-tolerant file system called Echo was built at SRC in the late 80s. The builders claimed that it would maintain consistency despite any number of non-Byzantine faults, and would make progress if any majority of the processors were working. As with most such systems, it was quite simple when nothing went wrong, but had a complicated algorithm for handling failures based on taking care of all the cases that the implementers could think of. I decided that what they were trying to do was impossible, and set out to prove it. Instead, I discovered the Paxos algorithm, described in this paper. At the heart of the algorithm is a three-phase consensus protocol. Dale Skeen seems to have been the first to have recognized the need for a three-phase protocol to avoid blocking in the presence of an arbitrary single failure. However, to my knowledge, Paxos contains the first three-phase commit algorithm that is a real algorithm, with a clearly stated correctness condition and a proof of correctness.
+
+I thought, and still think, that Paxos is an important algorithm. Inspired by my success at popularizing the consensus problem by describing it with Byzantine generals, I decided to cast the algorithm in terms of a parliament on an ancient Greek island. Leo Guibas suggested the name Paxos for the island. I gave the Greek legislators the names of computer scientists working in the field, transliterated with Guibas’s help into a bogus Greek dialect. (Peter Ladkin suggested the title.) Writing about a lost civilization allowed me to eliminate uninteresting details and indicate generalizations by saying that some details of the parliamentary protocol had been lost. To carry the image further, I gave a few lectures in the persona of an Indiana-Jones-style archaeologist, replete with Stetson hat and hip flask.
+
+My attempt at inserting some humor into the subject was a dismal failure. People who attended my lecture remembered Indiana Jones, but not the algorithm. People reading the paper apparently got so distracted by the Greek parable that they didn’t understand the algorithm. Among the people I sent the paper to, and who claimed to have read it, were Nancy Lynch, Vassos Hadzilacos, and Phil Bernstein. A couple of months later I emailed them the following question:
+
+Can you implement a distributed database that can tolerate the failure of any number of its processes (possibly all of them) without losing consistency, and that will resume normal behavior when more than half the processes are again working properly?
+None of them noticed any connection between this question and the Paxos algorithm.
+I submitted the paper to TOCS in 1990. All three referees said that the paper was mildly interesting, though not very important, but that all the Paxos stuff had to be removed. I was quite annoyed at how humorless everyone working in the field seemed to be, so I did nothing with the paper. A number of years later, a couple of people at SRC needed algorithms for distributed systems they were building, and Paxos provided just what they needed. I gave them the paper to read and they had no problem with it. Here is Chandu Thekkath’s account of the history of Paxos at SRC.
+
+When Ed Lee and I were working on Petal we needed some sort of commit protocol to make sure global operations in the distributed system completed correctly in the presence of server failures. We knew about 3PC and studied a description of it in Bernstein, Hadzilacos, and Goodman’s book Concurrency Control and Recovery in Database Systems. We found the protocol a bit difficult to understand and therefore abandoned our attempts at implementing it. At around this time, Mike Schroeder told us about a protocol for consensus that Leslie Lamport had invented and suggested we ask him about it. Leslie gave Ed a copy of the Part-Time Parliament tech report, which we both enjoyed reading. I particularly liked its humour and to this day, cannot understand why people don’t like that tech report. Paxos had all the necessary properties we wanted for our system and we figured we could implement it. Leslie provided essential consulting help as well, which resulted in the first implementation of the Paxos algorithm (including dynamic reconfiguration) as far as I am aware. A year later, when we needed a distributed lock server for the Frangipani file system we used Paxos again.
+
+So, I thought that maybe the time had come to try publishing it again.
+
+Meanwhile, the one exception in this dismal tale was Butler Lampson, who immediately understood the algorithm’s significance. He mentioned it in lectures and in a paper, and he interested Nancy Lynch in it. De Prisco, Lynch, and Lampson published their version of a specification and proof. Their papers made it more obvious that it was time for me to publish my paper. So, I proposed to Ken Birman, who was then the editor of TOCS, that he publish it. He suggested revising it, perhaps adding a TLA specification of the algorithm. But rereading the paper convinced me that the description and proof of the algorithm, while not what I would write today, was precise and rigorous enough. Admittedly, the paper needed revision to take into account the work that had been published in the intervening years. As a way of both carrying on the joke and saving myself work, I suggested that instead of my writing a revision, it be published as a recently rediscovered manuscript, with annotations by Keith Marzullo. Marzullo was willing, Birman agreed, and the paper finally appeared.
+
+There was an amusing typesetting footnote to this. To set off Marzullo’s annotations, I decided that they should be printed on a gray background. ACM had recently acquired some wonderful new typesetting software, and TOCS was not accepting camera-ready copy. Unfortunately, their wonderful new software could not do shading. So, I had to provide camera-ready copy for the shaded text. Moreover, their brilliant software could accept this copy only in floating figures, so Marzullo’s annotations don’t appear quite where they should. Furthermore, their undoubtedly expensive software wasn’t up to typesetting serious math. (After all, it’s a computing journal, so why should they have to typeset formulas?) Therefore, I had to provide the camera-ready copy for the definitions of the invariants in section A2, which they inserted as Figure 3 in the published version. So, the fonts in that figure don’t match those in the rest of the paper.
+
+This paper won an ACM SIGOPS Hall of Fame Award in 2012.
+
+This paper was first submitted in 1990, setting a personal record for publication delay that has since been broken by [60].
+View Publication
+Research Areas
+
+    Algorithms
+
+Follow us:
+
+    Follow on Twitter
+    Like on Facebook
+    Follow on LinkedIn
+    Subscribe on Youtube
+    Follow on Instagram
+    Subscribe to our RSS feed
+
+Share this page:
+
+    Share on Twitter
+    Share on Facebook
+    Share on LinkedIn
+    Share on Reddit
+
+What's new
+
+    Surface Laptop Go 2
+    Surface Pro 8
+    Surface Laptop Studio
+    Surface Pro X
+    Surface Go 3
+    Surface Duo 2
+    Surface Pro 7+
+    Windows 11 apps
+
+Microsoft Store
+
+    Account profile
+    Download Center
+    Microsoft Store support
+    Returns
+    Order tracking
+    Virtual workshops and training
+    Microsoft Store Promise
+    Flexible Payments
+
+Education
+
+    Microsoft in education
+    Devices for education
+    Microsoft Teams for Education
+    Microsoft 365 Education
+    Education consultation appointment
+    Educator training and development
+    Deals for students and parents
+    Azure for students
+
+Business
+
+    Microsoft Cloud
+    Microsoft Security
+    Dynamics 365
+    Microsoft 365
+    Microsoft Power Platform
+    Microsoft Teams
+    Microsoft Industry
+    Small Business
+
+Developer & IT
+
+    Azure
+    Developer Center
+    Documentation
+    Microsoft Learn
+    Microsoft Tech Community
+    Azure Marketplace
+    AppSource
+    Visual Studio
+
+Company
+
+    Careers
+    About Microsoft
+    Company news
+    Privacy at Microsoft
+    Investors
+    Diversity and inclusion
+    Accessibility
+    Sustainability
+
+    Sitemap
+    Contact Microsoft
+    Privacy
+    Terms of use
+    Trademarks
+    Safety & eco
+    About our ads
+    © Microsoft 2022
+
+Notifications

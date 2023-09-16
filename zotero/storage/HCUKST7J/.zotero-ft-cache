@@ -1,0 +1,75 @@
+
+Skip to main content
+USENIX
+
+    Conferences
+    Students
+
+Sign in
+
+    Home
+    Attend
+    Program
+    Activities
+    Sponsorship
+    Participate
+    About
+
+sponsors
+Gold Sponsor
+help promote
+
+FAST '17 CFP
+
+Get
+Help Promote graphics!
+connect with us
+
+
+     Twitter
+     Facebook
+     LinkedIn
+     Google+
+     YouTube
+
+twitter
+Tweets by @usenix
+usenix conference policies
+
+    Event Code of Conduct
+    Conference Network Policy
+    Statement on Environmental Responsibility Policy
+
+Efficient and Available In-memory KV-Store with Hybrid Erasure Coding and Replication
+Authors: 
+
+Heng Zhang, Mingkai Dong, and Haibo Chen, Shanghai Jiao Tong University
+Abstract: 
+
+In-memory key/value store (KV-store) is a key building block for many systems like databases and large websites. Two key requirements for such systems are efficiency and availability, which demand a KV-store to continuously handle millions of requests per second. A common approach to availability is using replication such as primary-backup (PBR), which, however, requires M +1 times memory to tolerate M failures. This renders scarce memory unable to handle useful user jobs.
+
+This paper makes the first case of building highly available in-memory KV-store by integrating erasure coding to achieve memory efficiency, while not notably degrading performance. A main challenge is that an in-memory KV-store has much scattered metadata. A single KV put may cause excessive coding operations and parity updates due to numerous small updates to metadata. Our approach, namely Cocytus, addresses this challenge by using a hybrid scheme that leverages PBR for small-sized and scattered data (e.g., metadata and key), while only applying erasure coding to relatively large data (e.g., value). To mitigate well-known issues like lengthy recovery of erasure coding, Cocytus uses an online recovery scheme by leveraging the replicated metadata information to continuously serving KV requests. We have applied Cocytus to Memcached. Evaluation using YCSB with different KV configurations shows that Cocytus incurs low overhead for latency and throughput, can tolerate node failures with fast online recovery, yet saves 33% to 46% memory compared to PBR when tolerating two failures.
+Open Access Media
+
+USENIX is committed to Open Access to the research presented at our events. Papers and proceedings are freely available to everyone once the event begins. Any video, audio, and/or slides that are posted after the event are also free and open to everyone. Support USENIX and our commitment to Open Access.
+Zhang PDF
+View the slides
+Presentation Audio
+MP3 Download
+
+Download Audio
+
+    Log in  or     Register to post comments
+
+Platinum Sponsors
+Gold Sponsors
+Silver Sponsors
+Bronze Sponsors
+Media Sponsors & Industry Partners
+Open Access Publishing Partner
+
+© USENIX 2022
+
+    Privacy Policy
+    Contact Us
+

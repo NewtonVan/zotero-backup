@@ -1,0 +1,83 @@
+
+usenix_logo_notag_white
+
+    Sign In
+    Conferences
+
+    Attend
+        Registration Information
+        Registration Discounts
+        Grant Program Overview
+        Student Grant Application
+        Diversity Grant Application
+        Venue, Hotel, and Travel
+    Program
+        Program at a Glance
+        Technical Sessions
+        Training Program
+        Activities
+        Birds-of-a-Feather Sessions (BoFs)
+        Poster Session and Reception
+        Work-in-Progress Reports (WiPs)
+    Participate
+        Call for Papers
+        Call for Posters and WiPs
+        Instructions for Presenters
+    Sponsorship
+        Exhibitor Services
+    About
+        Conference Organizers
+        Past Conferences
+        Code of Conduct
+        Questions
+
+HotRing: A Hotspot-Aware In-Memory Key-Value Store
+Authors: 
+
+Jiqiang Chen, Liang Chen, Sheng Wang, Guoyun Zhu, Yuanyuan Sun, Huan Liu, and Feifei Li, Alibaba Group
+Abstract: 
+
+Due to travel restrictions, the authors could not attend the conference and their work was presented by Le Cai, Alibaba Group .
+
+In-memory key-value stores (KVSes) are widely used to cache hot data, in order to solve the hotspot issue in disk-based storage or distributed systems. The hotspot issue inside in-memory KVSes is however being overlooked. Due to the recent trend that hotspot issue becomes more serious, the lack of hotspot-awareness in existing KVSes make them poorly performed and unreliable on highly skewed workloads. In this paper, we explore hotspot-aware designs for in-memory index structures in KVSes. We first analyze the potential benefits from ideal hotspot-aware indexes, and discuss challenges (i.e., hotspot shift and concurrent access issues) in effectively leveraging hotspot-awareness. Based on these insights, we propose a novel hotspot-aware KVS, named HotRing, that is optimized for massively concurrent accesses to a small portion of items. HotRing is based on an ordered-ring hash index structure, which provides fast access to hot items by moving head pointers closer to them. It also applies a lightweight strategy to detect hotspot shifts at run-time. HotRing comprehensively adopts lock-free structures in its design, for both common operations (i.e., read, update) and HotRing-specific operations (i.e., hotspot shift detection, head pointer movement and ordered-ring rehash), so that massively concurrent requests can better leverage multi-core architectures. The extensive experiments show that our approach is able to achieve 2.58× improvement compared to other in-memory KVSes on highly skewed workloads.
+
+FAST '20 Open Access Sponsored by NetApp
+Open Access Media
+
+USENIX is committed to Open Access to the research presented at our events. Papers and proceedings are freely available to everyone once the event begins. Any video, audio, and/or slides that are posted after the event are also free and open to everyone. Support USENIX and our commitment to Open Access.
+PDF icon Chen PDF
+Presentation Video 
+
+    Attend
+        Registration Information
+        Registration Discounts
+        Grant Program Overview
+        Student Grant Application
+        Diversity Grant Application
+        Venue, Hotel, and Travel
+    Program
+        Program at a Glance
+        Technical Sessions
+        Training Program
+        Activities
+        Birds-of-a-Feather Sessions (BoFs)
+        Poster Session and Reception
+        Work-in-Progress Reports (WiPs)
+    Participate
+        Call for Papers
+        Call for Posters and WiPs
+        Instructions for Presenters
+    Sponsorship
+        Exhibitor Services
+    About
+        Conference Organizers
+        Past Conferences
+        Code of Conduct
+        Questions
+
+Twitter Facebook Youtube
+
+    Privacy Policy
+    Contact Us
+
+© USENIX 2022

@@ -1,0 +1,123 @@
+
+Skip to Header Skip to Search Skip to Content Skip to Footer
+Skip to main content
+Microsoft
+Research
+
+    Our research
+    Programs & events
+    Blogs & podcasts
+    About
+    Sign up: Research Newsletter
+
+    All Microsoft
+
+Search Search Microsoft Research
+
+Paxos Made Simple
+
+    Leslie Lamport
+
+ACM SIGACT News (Distributed Computing Column) 32, 4 (Whole Number 121, December 2001) | December 2001 , pp. 51-58
+Download BibTex
+
+At the PODC 2001 conference, I got tired of everyone saying how difficult it was to understand the Paxos algorithm, published in [122] . Although people got so hung up in the pseudo-Greek names that they found the paper hard to understand, the algorithm itself is very simple. So, I cornered a couple of people at the conference and explained the algorithm to them orally, with no paper. When I got home, I wrote down the explanation as a short note, which I later revised based on comments from Fred Schneider and Butler Lampson. The current version is 13 pages long, and contains no formula more complicated than n1 > n2.
+
+Copyright © 2001 by the Association for Computing Machinery, Inc.Permission to make digital or hard copies of part or all of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, to republish, to post on servers, or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from Publications Dept, ACM Inc., fax +1 (212) 869-0481, or permissions@acm.org. The definitive version of this paper can be found at ACM's Digital Library --http://www.acm.org/dl/.
+View Publication
+Research Areas
+
+    Algorithms
+
+Follow us:
+
+    Follow on Twitter
+    Like on Facebook
+    Follow on LinkedIn
+    Subscribe on Youtube
+    Follow on Instagram
+    Subscribe to our RSS feed
+
+Share this page:
+
+    Share on Twitter
+    Share on Facebook
+    Share on LinkedIn
+    Share on Reddit
+
+What's new
+
+    Surface Laptop Go 2
+    Surface Pro 8
+    Surface Laptop Studio
+    Surface Pro X
+    Surface Go 3
+    Surface Duo 2
+    Surface Pro 7+
+    Windows 11 apps
+
+Microsoft Store
+
+    Account profile
+    Download Center
+    Microsoft Store support
+    Returns
+    Order tracking
+    Virtual workshops and training
+    Microsoft Store Promise
+    Flexible Payments
+
+Education
+
+    Microsoft in education
+    Devices for education
+    Microsoft Teams for Education
+    Microsoft 365 Education
+    Education consultation appointment
+    Educator training and development
+    Deals for students and parents
+    Azure for students
+
+Business
+
+    Microsoft Cloud
+    Microsoft Security
+    Dynamics 365
+    Microsoft 365
+    Microsoft Power Platform
+    Microsoft Teams
+    Microsoft Industry
+    Small Business
+
+Developer & IT
+
+    Azure
+    Developer Center
+    Documentation
+    Microsoft Learn
+    Microsoft Tech Community
+    Azure Marketplace
+    AppSource
+    Visual Studio
+
+Company
+
+    Careers
+    About Microsoft
+    Company news
+    Privacy at Microsoft
+    Investors
+    Diversity and inclusion
+    Accessibility
+    Sustainability
+
+    Sitemap
+    Contact Microsoft
+    Privacy
+    Terms of use
+    Trademarks
+    Safety & eco
+    About our ads
+    © Microsoft 2022
+
+Notifications

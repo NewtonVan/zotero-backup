@@ -1,0 +1,72 @@
+
+usenix_logo_notag_white
+
+    Sign In
+    Conferences
+
+    Attend
+        Registration Information
+        Registration Discounts
+        Terms and Conditions
+        Grant Opportunities
+        Venue, Hotel, and Travel
+    Program
+        Technical Sessions
+        Poster Session
+    Participate
+        Call for Papers
+        Submission Instructions
+        Call for Artifacts
+        Instructions for Presenters
+    Sponsors
+        Exhibitor Services
+    About
+        Conference Organizers
+        Past Conferences
+        Conference Policies
+        Code of Conduct
+        Questions
+
+Amazon DynamoDB: A Scalable, Predictably Performant, and Fully Managed NoSQL Database Service
+Authors: 
+
+Mostafa Elhemali, Niall Gallagher, Nicholas Gordon, Joseph Idziorek, Richard Krog, Colin Lazier, Erben Mo, Akhilesh Mritunjai, Somu Perianayagam ,Tim Rath, Swami Sivasubramanian, James Christopher Sorenson III, Sroaj Sosothikul, Doug Terry, Akshat Vig, Amazon Web Services
+Abstract: 
+
+Amazon DynamoDB is a NoSQL cloud database service that provides consistent performance at any scale. Hundreds of thousands of customers rely on DynamoDB for its fundamental properties: consistent performance, availability, durability, and a fully managed serverless experience. In 2021, during the 66 hour Amazon Prime Day shopping event, Amazon systems including Alexa, the Amazon.com sites, and Amazon fulfillment centers, made trillions of API calls to DynamoDB, peaking at 89.2 million requests per second, while experiencing high availability with single-digit millisecond performance. Since its launch in 2012, DynamoDB's design and implementation have evolved in response to our experiences operating it. The system has successfully dealt with issues related to fairness, traffic imbalance across partitions, monitoring, and automated system operations without impacting availability or performance. Reliability is essential, as even the slightest disruption can significantly impact customers. This paper presents our experience operating DynamoDB at a massive scale and how the architecture continues to evolve to meet the ever-increasing demands of customer workloads.
+Open Access Media
+
+USENIX is committed to Open Access to the research presented at our events. Papers and proceedings are freely available to everyone once the event begins. Any video, audio, and/or slides that are posted after the event are also free and open to everyone. Support USENIX and our commitment to Open Access.
+BibTeX
+PDF icon Elhemali PDF
+PDF icon USENIX ATC '22 Errata Slip #1
+
+    Attend
+        Registration Information
+        Registration Discounts
+        Terms and Conditions
+        Grant Opportunities
+        Venue, Hotel, and Travel
+    Program
+        Technical Sessions
+        Poster Session
+    Participate
+        Call for Papers
+        Submission Instructions
+        Call for Artifacts
+        Instructions for Presenters
+    Sponsors
+        Exhibitor Services
+    About
+        Conference Organizers
+        Past Conferences
+        Conference Policies
+        Code of Conduct
+        Questions
+
+Twitter Facebook Youtube
+
+    Privacy Policy
+    Contact Us
+
+© USENIX 2022
