@@ -8,7 +8,7 @@
 	"maxVersion": null,
 	"priority": 98,
 	"inRepository": true,
-	"lastUpdated": "2023-09-15 20:45:00"
+	"lastUpdated": "2023-09-26 16:20:00"
 }
 
 /*
@@ -193,7 +193,9 @@ function cleanData(items) {
 			if (typeof item === 'string') {
 				item = { ISBN: item };
 			}
-			item.ISBN = ZU.cleanISBN(item.ISBN);
+			if (item.ISBN) {
+				item.ISBN = ZU.cleanISBN(item.ISBN);
+			}
 			return item;
 		})
 		.filter(item => item.ISBN && (

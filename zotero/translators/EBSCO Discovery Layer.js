@@ -3,13 +3,13 @@
 	"translatorType": 4,
 	"label": "EBSCO Discovery Layer",
 	"creator": "Sebastian Karcher",
-	"target": "^https?://discovery\\.ebsco\\.com/",
+	"target": "^https?://(discovery|research)\\.ebsco\\.com/",
 	"minVersion": "5.0",
 	"maxVersion": null,
 	"priority": 100,
 	"inRepository": true,
 	"browserSupport": "gcsibv",
-	"lastUpdated": "2023-02-14 03:35:00"
+	"lastUpdated": "2023-11-27 04:30:00"
 }
 
 /*
@@ -35,7 +35,7 @@
 	***** END LICENSE BLOCK *****
 */
 
-const itemRegex = /\/c\/([^/]+)\/(?:details|viewer\/pdf)\/([^?]+)/;
+const itemRegex = /\/c\/([^/]+)(?:\/search)?\/(?:details|viewer\/pdf)\/([^?]+)/;
 function detectWeb(doc, url) {
 	if (itemRegex.test(url)) {
 		if (url.includes("/viewer/pdf")) {

@@ -11,7 +11,7 @@
 	"displayOptions": {
 		"exportCharset": "UTF-8"
 	},
-	"lastUpdated": "2023-01-04 21:45:00"
+	"lastUpdated": "2023-11-05 21:55:00"
 }
 
 /*
@@ -319,7 +319,7 @@ function doExport() {
 		
 		// Don't include access date for journals with no URL
 		if (item.accessDate && !(item.itemType == 'journalArticle' && !item.url)) {
-			properties.accessdate = formatDate(item.accessDate);
+			properties["access-date"] = formatDate(item.accessDate);
 		}
 		
 		if (item.date) {

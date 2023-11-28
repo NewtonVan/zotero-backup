@@ -1,0 +1,87 @@
+
+Skip to main content
+Cornell University
+
+Take the annual global survey
+We gratefully acknowledge support from the Simons Foundation, member institutions , and all contributors. Donate
+arxiv logo > cs > arXiv:1610.09166
+
+Help | Advanced Search
+Search
+Computer Science > Databases
+(cs)
+[Submitted on 28 Oct 2016]
+Title: Push vs. Pull-Based Loop Fusion in Query Engines
+Authors: Amir Shaikhha , Mohammad Dashti , Christoph Koch
+Download a PDF of the paper titled Push vs. Pull-Based Loop Fusion in Query Engines, by Amir Shaikhha and 2 other authors
+Download PDF
+
+    Abstract: Database query engines use pull-based or push-based approaches to avoid the materialization of data across query operators. In this paper, we study these two types of query engines in depth and present the limitations and advantages of each engine. Similarly, the programming languages community has developed loop fusion techniques to remove intermediate collections in the context of collection programming. We draw parallels between the DB and PL communities by demonstrating the connection between pipelined query engines and loop fusion techniques. Based on this connection, we propose a new type of pull-based engine, inspired by a loop fusion technique, which combines the benefits of both approaches. Then we experimentally evaluate the various engines, in the context of query compilation, for the first time in a fair environment, eliminating the biasing impact of ancillary optimizations that have traditionally only been used with one of the approaches. We show that for realistic analytical workloads, there is no considerable advantage for either form of pipelined query engine, as opposed to what recent research suggests. Also, by using microbenchmarks we show that our proposed engine dominates the existing engines by combining the benefits of both. 
+
+Subjects: 	Databases (cs.DB) ; Programming Languages (cs.PL)
+Cite as: 	arXiv:1610.09166 [cs.DB]
+  	(or arXiv:1610.09166v1 [cs.DB] for this version)
+  	https://doi.org/10.48550/arXiv.1610.09166
+Focus to learn more
+arXiv-issued DOI via DataCite
+Submission history
+From: Amir Shaikhha [ view email ]
+[v1] Fri, 28 Oct 2016 11:00:02 UTC (1,203 KB)
+Full-text links:
+Access Paper:
+
+    Download a PDF of the paper titled Push vs. Pull-Based Loop Fusion in Query Engines, by Amir Shaikhha and 2 other authors
+    Download PDF
+    PostScript
+    Other Formats 
+
+( view license )
+Current browse context:
+cs.DB
+< prev   |   next >
+new | recent | 1610
+Change to browse by:
+cs
+cs.PL
+References & Citations
+
+    NASA ADS
+    Google Scholar
+    Semantic Scholar
+
+DBLP - CS Bibliography
+listing | bibtex
+Amir Shaikhha
+Mohammad Dashti
+Christoph Koch
+a export BibTeX citation Loading...
+Bookmark
+BibSonomy logo Reddit logo
+Bibliographic Tools
+Bibliographic and Citation Tools
+Bibliographic Explorer Toggle
+Bibliographic Explorer ( What is the Explorer? )
+Litmaps Toggle
+Litmaps ( What is Litmaps? )
+scite.ai Toggle
+scite Smart Citations ( What are Smart Citations? )
+Code, Data, Media
+Demos
+Related Papers
+About arXivLabs
+Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )
+
+    About
+    Help
+
+    contact arXiv Click here to contact arXiv Contact
+    subscribe to arXiv mailings Click here to subscribe Subscribe
+
+    Copyright
+    Privacy Policy
+
+    Web Accessibility Assistance
+
+    arXiv Operational Status
+    Get status notifications via email or slack
+
