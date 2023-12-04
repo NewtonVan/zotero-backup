@@ -14,10 +14,10 @@
 	"inRepository": false,
 	"configOptions": {
 		"getCollections": true,
-		"hash": "88e32ac8c7827cb7643f77e9b57b5df57132fe72d8965eb2b789dbf5523a6689"
+		"hash": "05815af25cd8a6fde430e1e11b7d59274fea54668abff1e3e58987816c93909b"
 	},
 	"priority": 100,
-	"lastUpdated": "2023-09-22"
+	"lastUpdated": "2023-11-21"
 }
 
 ZOTERO_CONFIG = {"GUID":"zotero@chnm.gmu.edu","ID":"zotero","CLIENT_NAME":"Zotero","DOMAIN_NAME":"zotero.org","PRODUCER":"Digital Scholar","PRODUCER_URL":"https://digitalscholar.org","REPOSITORY_URL":"https://repo.zotero.org/repo/","BASE_URI":"http://zotero.org/","WWW_BASE_URL":"https://www.zotero.org/","PROXY_AUTH_URL":"https://zoteroproxycheck.s3.amazonaws.com/test","API_URL":"https://api.zotero.org/","STREAMING_URL":"wss://stream.zotero.org/","SERVICES_URL":"https://services.zotero.org/","API_VERSION":3,"CONNECTOR_MIN_VERSION":"5.0.39","PREF_BRANCH":"extensions.zotero.","BOOKMARKLET_ORIGIN":"https://www.zotero.org","BOOKMARKLET_URL":"https://www.zotero.org/bookmarklet/","START_URL":"https://www.zotero.org/start","QUICK_START_URL":"https://www.zotero.org/support/quick_start_guide","PDF_TOOLS_URL":"https://www.zotero.org/download/xpdf/","SUPPORT_URL":"https://www.zotero.org/support/","SYNC_INFO_URL":"https://www.zotero.org/support/sync","TROUBLESHOOTING_URL":"https://www.zotero.org/support/getting_help","FEEDBACK_URL":"https://forums.zotero.org/","CONNECTORS_URL":"https://www.zotero.org/download/connectors","CHANGELOG_URL":"https://www.zotero.org/support/changelog","CREDITS_URL":"https://www.zotero.org/support/credits_and_acknowledgments","LICENSING_URL":"https://www.zotero.org/support/licensing","GET_INVOLVED_URL":"https://www.zotero.org/getinvolved","DICTIONARIES_URL":"https://download.zotero.org/dictionaries/"}
@@ -100,31 +100,31 @@ var { doExport } = (() => {
         }([function(t, e, r) {
           "use strict";
           Object.defineProperty(e, "__esModule", { value: true });
-          var n = r(1), o = r(9), i = r(12), a = r(6), c = r(2), u = function() {
+          var n = r(1), o = r(9), i = r(12), a = r(6), u = r(2), c = function() {
             function t2(t3, e2, r2) {
-              var n2 = void 0 === r2 ? {} : r2, o2 = n2.keepSpace, i2 = void 0 !== o2 && o2, a2 = n2.prevTagName, c2 = void 0 === a2 ? "" : a2, u2 = n2.nextTagName, s = void 0 === u2 ? "" : u2, l = n2.prevTagStr, p = void 0 === l ? "" : l, f = n2.nextTagStr, h = void 0 === f ? "" : f, d = n2.parentTag, _ = void 0 === d ? "" : d, y = n2.isFirstSubTag, v = void 0 === y || y, g = n2.calcLeading, b = void 0 !== g && g, m = n2.leadingSpace, O = void 0 === m ? "" : m, T = n2.layer, S = void 0 === T ? 1 : T, x = n2.noWrap, j = void 0 !== x && x, w = n2.match, P = void 0 === w ? null : w, M = n2.indentSpace, C = void 0 === M ? "" : M, N = n2.language, E = void 0 === N ? "" : N, L = n2.count, k = void 0 === L ? 1 : L, A = n2.tableColumnCount, V = void 0 === A ? 0 : A, W = n2.noExtraLine, R = void 0 !== W && W, I = n2.inTable, H = void 0 !== I && I;
-              if (this.tagName = e2, this.rawStr = t3, this.parentTag = _, this.prevTagName = c2, this.nextTagName = s, this.prevTagStr = p, this.nextTagStr = h, this.isFirstSubTag = v, this.calcLeading = b, this.leadingSpace = O, this.layer = S, this.noWrap = j, this.match = P, this.indentSpace = C, this.language = E, this.count = k, this.inTable = H, this.tableColumnCount = V, this.noExtraLine = R, this.keepSpace = i2, !this.__detectStr__(t3, this.tagName))
+              var n2 = void 0 === r2 ? {} : r2, o2 = n2.keepSpace, i2 = void 0 !== o2 && o2, a2 = n2.prevTagName, u2 = void 0 === a2 ? "" : a2, c2 = n2.nextTagName, s = void 0 === c2 ? "" : c2, l = n2.prevTagStr, p = void 0 === l ? "" : l, f = n2.nextTagStr, h = void 0 === f ? "" : f, d = n2.parentTag, _ = void 0 === d ? "" : d, y = n2.isFirstSubTag, v = void 0 === y || y, g = n2.calcLeading, b = void 0 !== g && g, m = n2.leadingSpace, O = void 0 === m ? "" : m, T = n2.layer, S = void 0 === T ? 1 : T, x = n2.noWrap, j = void 0 !== x && x, w = n2.match, P = void 0 === w ? null : w, M = n2.indentSpace, C = void 0 === M ? "" : M, N = n2.language, E = void 0 === N ? "" : N, L = n2.count, k = void 0 === L ? 1 : L, A = n2.tableColumnCount, V = void 0 === A ? 0 : A, W = n2.noExtraLine, R = void 0 !== W && W, I = n2.inTable, H = void 0 !== I && I;
+              if (this.tagName = e2, this.rawStr = t3, this.parentTag = _, this.prevTagName = u2, this.nextTagName = s, this.prevTagStr = p, this.nextTagStr = h, this.isFirstSubTag = v, this.calcLeading = b, this.leadingSpace = O, this.layer = S, this.noWrap = j, this.match = P, this.indentSpace = C, this.language = E, this.count = k, this.inTable = H, this.tableColumnCount = V, this.noExtraLine = R, this.keepSpace = i2, !this.__detectStr__(t3, this.tagName))
                 return this.attrs = {}, void (this.innerHTML = "");
               var q = this.__fetchTagAttrAndInnerHTML__(t3), F = q.attr, G = q.innerHTML;
               this.attrs = F, this.innerHTML = G;
             }
             return t2.prototype.__detectStr__ = function(t3, e2) {
               if ("<" !== t3[0])
-                return console.error("Not a valid tag, current tag name: ".concat(this.tagName, ", tag content: ").concat(t3)), false;
+                return "Not a valid tag, current tag name: ".concat(this.tagName, ", tag content: ").concat(t3), false;
               for (var r2 = "", n2 = false, o2 = 1; o2 < t3.length && ">" !== t3[o2]; o2++)
                 !n2 && /(\s|\/)/.test(t3[o2]) && (n2 = true), n2 || (r2 += t3[o2]);
-              return r2 === e2 || (console.warn("Tag is not match tagName, tagName in str is " + r2 + ", which tagName passed from parent is " + e2), false);
+              return r2 === e2;
             }, t2.prototype.__fetchTagAttrAndInnerHTML__ = function(t3) {
               for (var e2 = "", r2 = 1; r2 < t3.length && ">" !== t3[r2]; r2++)
                 e2 += t3[r2];
-              for (var o2 = t3.slice(r2 + 1), i2 = "", a2 = -1, c2 = o2.length - 1; c2 >= 0; c2--)
-                if ((i2 = o2[c2] + i2).startsWith("</")) {
-                  i2.startsWith("</" + this.tagName + ">") && (a2 = c2);
+              for (var o2 = t3.slice(r2 + 1), i2 = "", a2 = -1, u2 = o2.length - 1; u2 >= 0; u2--)
+                if ((i2 = o2[u2] + i2).startsWith("</")) {
+                  i2.startsWith("</" + this.tagName + ">") && (a2 = u2);
                   break;
                 }
-              -1 === a2 && (0, n.isSelfClosing)(this.tagName) && console.warn("There detect a self close tag, which name is:", this.tagName);
-              var u2 = (0, n.getTagAttributes)(e2);
-              return this.tagName && delete u2[this.tagName], { attr: u2, innerHTML: o2.slice(0, a2) };
+              -1 === a2 && (0, n.isSelfClosing)(this.tagName) && this.tagName;
+              var c2 = (0, n.getTagAttributes)(e2);
+              return this.tagName && delete c2[this.tagName], { attr: c2, innerHTML: o2.slice(0, a2) };
             }, t2.prototype.__onlyLeadingSpace__ = function(t3) {
               t3 = t3.trim();
               for (var e2 = 0; e2 < t3.length; e2++)
@@ -136,12 +136,13 @@ var { doExport } = (() => {
             }, t2.prototype.getValidSubTagName = function(t3) {
               return t3;
             }, t2.prototype.beforeParse = function() {
-              var t3 = c.default.get().tagListener;
+              var t3 = u.default.get().tagListener;
               if (t3) {
+                this.tagName, this.match;
                 var e2 = t3(this.tagName, { parentTag: this.parentTag, prevTagName: this.prevTagName, nextTagName: this.nextTagName, isFirstSubTag: this.isFirstSubTag, attrs: this.attrs, innerHTML: this.innerHTML, language: this.language, match: this.match, isSelfClosing: false }), r2 = e2.attrs, n2 = e2.language, o2 = e2.match;
                 this.attrs = r2, "string" === typeof n2 && (this.language = n2), "undefined" !== typeof o2 && (this.match = o2);
               }
-              return "";
+              return this.tagName, this.match, "";
             }, t2.prototype.parseValidSubTag = function(t3, e2, r2) {
               return new ((0, n.getTagConstructor)(e2))(t3, e2, r2).exec();
             }, t2.prototype.parseOnlyString = function(t3, e2, r2) {
@@ -160,16 +161,16 @@ var { doExport } = (() => {
               return t3;
             }, t2.prototype.exec = function(t3, e2) {
               void 0 === t3 && (t3 = ""), void 0 === e2 && (e2 = "");
-              for (var r2 = this.beforeParse(), o2 = (0, n.generateGetNextValidTag)(this.innerHTML), i2 = o2(), c2 = i2[0], u2 = i2[1], s = null; "" !== u2; ) {
+              for (var r2 = this.beforeParse(), o2 = (0, n.generateGetNextValidTag)(this.innerHTML), i2 = o2(), u2 = i2[0], c2 = i2[1], s = null; "" !== c2; ) {
                 var l = o2(), p = l[0], f = l[1], h = { parentTag: this.tagName, nextTagName: p, nextTagStr: f, prevTagName: s, prevTagStr: r2, leadingSpace: this.leadingSpace, layer: this.layer, keepSpace: this.keepSpace, inTable: this.inTable }, d = void 0;
-                d = null != c2 ? this.parseValidSubTag(u2, c2, h) : this.parseOnlyString(u2, c2, h);
-                var _ = this.getValidSubTagName(c2);
-                c2 = p, u2 = f, null == _ && this.__isEmpty__(d) || (s = _, this.isFirstSubTag = false, r2 += d);
+                d = null != u2 ? this.parseValidSubTag(c2, u2, h) : this.parseOnlyString(c2, u2, h);
+                var _ = this.getValidSubTagName(u2);
+                u2 = p, c2 = f, null == _ && this.__isEmpty__(d) || (s = _, this.isFirstSubTag = false, r2 += d);
               }
               return r2 = this.afterParsed(r2), r2 = this.slim(r2), this.__isEmpty__(r2) ? "" : (r2 = this.beforeMergeSpace(r2), !this.noExtraLine && (0, a.default)(this.tagName) && this.prevTagName && !r2.startsWith("\n") && !(0, a.default)(this.prevTagName) && this.parentTag && (t3 = "\n\n"), r2 = this.mergeSpace(r2, t3, e2), this.noWrap && !this.keepSpace && (r2 = r2.replace(/\s+/g, " ")), r2 = this.afterMergeSpace(r2), r2 = this.beforeReturn(r2));
             }, t2;
           }();
-          e.default = u;
+          e.default = c;
         }, function(t, e, r) {
           "use strict";
           Object.defineProperty(e, "__esModule", { value: true }), e.shouldRenderRawInside = e.isIndependentTag = e.clearComment = e.getLanguage = e.getTableAlign = e.getTagAttributes = e.isSelfClosing = e.generateGetNextValidTag = e.getTagConstructor = e.getRealTagName = e.unescapeStr = e.extraEscape = void 0;
@@ -185,10 +186,10 @@ var { doExport } = (() => {
           e.getTagConstructor = i.default;
           var a = r(11);
           e.isSelfClosing = a.default;
-          var c = r(51);
-          e.getTagAttributes = c.default;
-          var u = r(52);
-          e.getLanguage = u.default;
+          var u = r(51);
+          e.getTagAttributes = u.default;
+          var c = r(52);
+          e.getLanguage = c.default;
           var s = r(53);
           e.clearComment = s.default;
           var l = r(17);
@@ -204,10 +205,10 @@ var { doExport } = (() => {
           Object.defineProperty(e, "__esModule", { value: true });
           var n = function() {
             function t2(t3) {
-              var e2 = void 0 === t3 ? {} : t3, r2 = e2.skipTags, n2 = void 0 === r2 ? [] : r2, o2 = e2.emptyTags, i2 = void 0 === o2 ? [] : o2, a = e2.ignoreTags, c = void 0 === a ? [] : a, u = e2.aliasTags, s = void 0 === u ? {} : u, l = e2.renderCustomTags, p = void 0 === l || l, f = e2.tagListener, h = void 0 === f ? function(t4, e3) {
+              var e2 = void 0 === t3 ? {} : t3, r2 = e2.skipTags, n2 = void 0 === r2 ? [] : r2, o2 = e2.emptyTags, i2 = void 0 === o2 ? [] : o2, a = e2.ignoreTags, u = void 0 === a ? [] : a, c = e2.aliasTags, s = void 0 === c ? {} : c, l = e2.renderCustomTags, p = void 0 === l || l, f = e2.tagListener, h = void 0 === f ? function(t4, e3) {
                 return e3;
               } : f;
-              this.options = { skipTags: n2, emptyTags: i2, ignoreTags: c, aliasTags: s, renderCustomTags: p, tagListener: h };
+              this.options = { skipTags: n2, emptyTags: i2, ignoreTags: u, aliasTags: s, renderCustomTags: p, tagListener: h };
             }
             return t2.prototype.get = function() {
               return this.options;
@@ -233,7 +234,7 @@ var { doExport } = (() => {
           i.reset(), e.default = i;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -270,8 +271,8 @@ var { doExport } = (() => {
           Object.defineProperty(e, "__esModule", { value: true });
           var n = r(1), o = r(2), i = function() {
             function t2(t3, e2, r2) {
-              var n2 = void 0 === r2 ? {} : r2, o2 = n2.parentTag, i2 = void 0 === o2 ? "" : o2, a = n2.leadingSpace, c = void 0 === a ? "" : a, u = n2.layer, s = void 0 === u ? 1 : u, l = n2.isFirstSubTag, p = void 0 !== l && l, f = n2.inTable, h = void 0 !== f && f, d = n2.match, _ = void 0 === d ? null : d, y = n2.prevTagName, v = void 0 === y ? "" : y, g = n2.nextTagName, b = void 0 === g ? "" : g;
-              if (this.tagName = e2, this.rawStr = t3, this.parentTag = i2, this.isFirstSubTag = p, this.prevTagName = v, this.nextTagName = b, this.leadingSpace = c, this.layer = s, this.innerHTML = "", this.match = _, this.inTable = h, this.__detectStr__(t3, this.tagName)) {
+              var n2 = void 0 === r2 ? {} : r2, o2 = n2.parentTag, i2 = void 0 === o2 ? "" : o2, a = n2.leadingSpace, u = void 0 === a ? "" : a, c = n2.layer, s = void 0 === c ? 1 : c, l = n2.isFirstSubTag, p = void 0 !== l && l, f = n2.inTable, h = void 0 !== f && f, d = n2.match, _ = void 0 === d ? null : d, y = n2.prevTagName, v = void 0 === y ? "" : y, g = n2.nextTagName, b = void 0 === g ? "" : g;
+              if (this.tagName = e2, this.rawStr = t3, this.parentTag = i2, this.isFirstSubTag = p, this.prevTagName = v, this.nextTagName = b, this.leadingSpace = u, this.layer = s, this.innerHTML = "", this.match = _, this.inTable = h, this.__detectStr__(t3, this.tagName)) {
                 var m = this.__fetchTagAttr__(t3).attr;
                 this.attrs = m;
               } else
@@ -279,10 +280,10 @@ var { doExport } = (() => {
             }
             return t2.prototype.__detectStr__ = function(t3, e2) {
               if ("<" !== t3[0])
-                return console.error("Not a valid tag, current tag name: ".concat(this.tagName, ", tag content: ").concat(t3)), false;
+                return "Not a valid tag, current tag name: ".concat(this.tagName, ", tag content: ").concat(t3), false;
               for (var r2 = "", n2 = false, o2 = 1; o2 < t3.length && ">" !== t3[o2]; o2++)
                 !n2 && /(\s|\/)/.test(t3[o2]) && (n2 = true), n2 || (r2 += t3[o2]);
-              return r2 === e2 || (console.warn("Tag is not match tagName, tagName in str is " + r2 + ", which tagName passed from parent is " + e2), false);
+              return r2 === e2;
             }, t2.prototype.__fetchTagAttr__ = function(t3) {
               for (var e2 = "", r2 = 1; r2 < t3.length && ">" !== t3[r2]; r2++)
                 e2 += t3[r2];
@@ -330,7 +331,7 @@ var { doExport } = (() => {
           };
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -356,7 +357,7 @@ var { doExport } = (() => {
             }).apply(this, arguments);
           };
           Object.defineProperty(e, "__esModule", { value: true }), e.__EmptySelfClose__ = e.__Empty__ = void 0;
-          var i = r(0), a = r(4), c = function(t2) {
+          var i = r(0), a = r(4), u = function(t2) {
             function e2(e3, r2, n2) {
               return void 0 === r2 && (r2 = "__empty__"), t2.call(this, e3, r2, n2) || this;
             }
@@ -370,8 +371,8 @@ var { doExport } = (() => {
               return t2.prototype.exec.call(this, "", "");
             }, e2;
           }(i.default);
-          e.__Empty__ = c;
-          var u = function(t2) {
+          e.__Empty__ = u;
+          var c = function(t2) {
             function e2(e3, r2) {
               void 0 === r2 && (r2 = "__emptyselfclose__");
               var n2 = t2.call(this, e3, r2) || this;
@@ -381,10 +382,10 @@ var { doExport } = (() => {
               return t2.prototype.exec.call(this, "", "");
             }, e2;
           }(a.default);
-          e.__EmptySelfClose__ = u;
+          e.__EmptySelfClose__ = c;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -403,7 +404,7 @@ var { doExport } = (() => {
             };
           }();
           Object.defineProperty(e, "__esModule", { value: true }), e.__SkipSelfClose__ = e.__Skip__ = void 0;
-          var o = r(0), i = r(4), a = r(1), c = function(t2) {
+          var o = r(0), i = r(4), a = r(1), u = function(t2) {
             function e2(e3, r2, n2) {
               void 0 === r2 && (r2 = "__skip__");
               var o2 = t2.call(this, e3, r2, n2) || this;
@@ -414,8 +415,8 @@ var { doExport } = (() => {
               return t2.prototype.exec.call(this, r2, n2);
             }, e2;
           }(o.default);
-          e.__Skip__ = c;
-          var u = function(t2) {
+          e.__Skip__ = u;
+          var c = function(t2) {
             function e2(e3, r2, n2) {
               return void 0 === r2 && (r2 = "__skipselfclose__"), t2.call(this, e3, r2, n2) || this;
             }
@@ -423,15 +424,15 @@ var { doExport } = (() => {
               return "";
             }, e2;
           }(i.default);
-          e.__SkipSelfClose__ = u;
+          e.__SkipSelfClose__ = c;
         }, function(t, e, r) {
           "use strict";
           Object.defineProperty(e, "__esModule", { value: true });
           var n = r(1), o = r(6), i = function() {
             function t2(t3, e2, r2) {
               void 0 === e2 && (e2 = "__nomatch__");
-              var n2 = void 0 === r2 ? {} : r2, o2 = n2.keepSpace, i2 = void 0 !== o2 && o2, a = n2.prevTagName, c = void 0 === a ? "" : a, u = n2.nextTagName, s = void 0 === u ? "" : u, l = n2.parentTag, p = void 0 === l ? "" : l, f = n2.calcLeading, h = void 0 !== f && f, d = n2.layer, _ = void 0 === d ? 1 : d, y = n2.leadingSpace, v = void 0 === y ? "" : y, g = n2.inTable, b = void 0 !== g && g;
-              this.tagName = e2, this.nextTagName = s, this.prevTagName = c, this.parentTag = p, this.keepSpace = i2, this.calcLeading = h, this.leadingSpace = v, this.layer = _, this.rawStr = t3, this.inTable = b;
+              var n2 = void 0 === r2 ? {} : r2, o2 = n2.keepSpace, i2 = void 0 !== o2 && o2, a = n2.prevTagName, u = void 0 === a ? "" : a, c = n2.nextTagName, s = void 0 === c ? "" : c, l = n2.parentTag, p = void 0 === l ? "" : l, f = n2.calcLeading, h = void 0 !== f && f, d = n2.layer, _ = void 0 === d ? 1 : d, y = n2.leadingSpace, v = void 0 === y ? "" : y, g = n2.inTable, b = void 0 !== g && g;
+              this.tagName = e2, this.nextTagName = s, this.prevTagName = u, this.parentTag = p, this.keepSpace = i2, this.calcLeading = h, this.leadingSpace = v, this.layer = _, this.rawStr = t3, this.inTable = b;
             }
             return t2.prototype.slim = function(t3) {
               if (this.keepSpace)
@@ -453,7 +454,7 @@ var { doExport } = (() => {
           e.default = i;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -483,7 +484,7 @@ var { doExport } = (() => {
             }, e2;
           }(o.default);
           e.__NoMatch__ = a;
-          var c = function(t2) {
+          var u = function(t2) {
             function e2(e3, r2) {
               return void 0 === r2 && (r2 = "__nomatchselfclose__"), t2.call(this, e3, r2) || this;
             }
@@ -491,7 +492,7 @@ var { doExport } = (() => {
               return "<".concat(this.tagName, " />");
             }, e2;
           }(i.default);
-          e.__NoMatchSelfClose__ = c;
+          e.__NoMatchSelfClose__ = u;
         }, function(t, e, r) {
           "use strict";
           Object.defineProperty(e, "__esModule", { value: true });
@@ -507,7 +508,7 @@ var { doExport } = (() => {
           e.TRIPLE = "\u2608\u2608\u2608";
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -541,7 +542,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -575,7 +576,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -609,7 +610,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -655,7 +656,7 @@ var { doExport } = (() => {
           };
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -690,7 +691,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -720,7 +721,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -746,7 +747,7 @@ var { doExport } = (() => {
             }).apply(this, arguments);
           };
           Object.defineProperty(e, "__esModule", { value: true });
-          var i = r(6), a = r(0), c = r(1), u = function(t2) {
+          var i = r(6), a = r(0), u = r(1), c = function(t2) {
             function e2(e3, r2, n2) {
               void 0 === r2 && (r2 = "blockquote");
               var o2 = t2.call(this, e3, r2, n2) || this;
@@ -774,19 +775,19 @@ var { doExport } = (() => {
               return t3;
             }, e2.prototype.parseValidSubTag = function(t3, e3, r2) {
               var n2;
-              "blockquote" === e3 ? n2 = new ((0, c.getTagConstructor)(e3))(t3, e3, o(o({}, r2), { calcLeading: this.calcLeading, match: this.match + ">", noExtraLine: true })) : n2 = new ((0, c.getTagConstructor)(e3))(t3, e3, o(o({}, r2), { noExtraLine: true }));
-              var a2 = n2.exec(), u2 = "";
-              this.calcLeading && (u2 = this.leadingSpace);
+              "blockquote" === e3 ? n2 = new ((0, u.getTagConstructor)(e3))(t3, e3, o(o({}, r2), { calcLeading: this.calcLeading, match: this.match + ">", noExtraLine: true })) : n2 = new ((0, u.getTagConstructor)(e3))(t3, e3, o(o({}, r2), { noExtraLine: true }));
+              var a2 = n2.exec(), c2 = "";
+              this.calcLeading && (c2 = this.leadingSpace);
               var s = (0, i.default)(r2.prevTagName) && "br" !== r2.prevTagName, l = (0, i.default)(r2.nextTagName) && "br" !== r2.nextTagName, p = (0, i.default)(e3) && "br" !== e3;
-              return this.isFirstSubTag ? a2.trimLeft().replace(u2, "") : p ? (a2 = u2 + this.match + a2, s || (a2 = "\n" + a2), !l && r2.nextTagStr && r2.nextTagStr.trim() && (a2 += this.match + "\n"), a2) : s ? u2 + this.match + "\n" + a2 : a2;
+              return this.isFirstSubTag ? a2.trimLeft().replace(c2, "") : p ? (a2 = c2 + this.match + a2, s || (a2 = "\n" + a2), !l && r2.nextTagStr && r2.nextTagStr.trim() && (a2 += this.match + "\n"), a2) : s ? c2 + this.match + "\n" + a2 : a2;
             }, e2.prototype.exec = function(e3, r2) {
               return void 0 === e3 && (e3 = "\n"), void 0 === r2 && (r2 = "\n"), t2.prototype.exec.call(this, e3, r2);
             }, e2;
           }(a.default);
-          e.default = u;
+          e.default = c;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -816,7 +817,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -842,7 +843,7 @@ var { doExport } = (() => {
             }).apply(this, arguments);
           };
           Object.defineProperty(e, "__esModule", { value: true });
-          var i = r(0), a = r(1), c = function(t2) {
+          var i = r(0), a = r(1), u = function(t2) {
             function e2(e3, r2, n2) {
               void 0 === r2 && (r2 = "code");
               var o2 = t2.call(this, e3, r2, n2) || this;
@@ -865,10 +866,10 @@ var { doExport } = (() => {
               return void 0 === e3 && (e3 = ""), void 0 === r2 && (r2 = ""), t2.prototype.exec.call(this, e3, r2);
             }, e2;
           }(i.default);
-          e.default = c;
+          e.default = u;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -900,7 +901,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -932,7 +933,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -964,7 +965,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -996,7 +997,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -1028,7 +1029,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -1060,7 +1061,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -1096,7 +1097,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -1126,7 +1127,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -1159,7 +1160,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -1192,7 +1193,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -1218,7 +1219,7 @@ var { doExport } = (() => {
             }).apply(this, arguments);
           };
           Object.defineProperty(e, "__esModule", { value: true });
-          var i = r(0), a = r(1), c = r(6), u = r(12), s = function(t2) {
+          var i = r(0), a = r(1), u = r(6), c = r(12), s = function(t2) {
             function e2(e3, r2, n2) {
               void 0 === r2 && (r2 = "li");
               var o2 = t2.call(this, e3, r2, n2) || this;
@@ -1228,15 +1229,15 @@ var { doExport } = (() => {
               return this.extraGap + this.leadingSpace + this.match + " " + t3;
             }, e2.prototype.__calcNextLeading__ = function() {
               var t3, e3, r2;
-              return 1 === (null === (t3 = this.match) || void 0 === t3 ? void 0 : t3.length) ? u.DOUBLE : 2 === (null === (e3 = this.match) || void 0 === e3 ? void 0 : e3.length) ? u.TRIPLE : 3 === (null === (r2 = this.match) || void 0 === r2 ? void 0 : r2.length) ? u.DOUBLE : u.TRIPLE + u.DOUBLE;
+              return 1 === (null === (t3 = this.match) || void 0 === t3 ? void 0 : t3.length) ? c.DOUBLE : 2 === (null === (e3 = this.match) || void 0 === e3 ? void 0 : e3.length) ? c.TRIPLE : 3 === (null === (r2 = this.match) || void 0 === r2 ? void 0 : r2.length) ? c.DOUBLE : c.TRIPLE + c.DOUBLE;
             }, e2.prototype.parseValidSubTag = function(t3, e3, r2) {
-              var n2 = (0, a.getTagConstructor)(e3), i2 = this.__calcNextLeading__(), c2 = new n2(t3, e3, o(o({}, r2), { calcLeading: true, leadingSpace: this.leadingSpace + i2, layer: this.layer + 1 })).exec();
-              return "p" === e3 && (this.extraGap = "\n"), this.isFirstSubTag ? c2.trimLeft().replace(this.leadingSpace + i2, "") : c2;
+              var n2 = (0, a.getTagConstructor)(e3), i2 = this.__calcNextLeading__(), u2 = new n2(t3, e3, o(o({}, r2), { calcLeading: true, leadingSpace: this.leadingSpace + i2, layer: this.layer + 1 })).exec();
+              return "p" === e3 && (this.extraGap = "\n"), this.isFirstSubTag ? u2.trimLeft().replace(this.leadingSpace + i2, "") : u2;
             }, e2.prototype.parseOnlyString = function(e3, r2, n2) {
               var i2 = false;
-              (0, c.default)(n2.prevTagName) && (i2 = true);
-              var a2 = this.__calcNextLeading__(), u2 = t2.prototype.parseOnlyString.call(this, e3, r2, o(o({}, n2), { calcLeading: i2, leadingSpace: this.leadingSpace + a2, layer: this.layer + 1 }));
-              return this.isFirstSubTag ? u2.replace(this.leadingSpace + a2, "") : u2;
+              (0, u.default)(n2.prevTagName) && (i2 = true);
+              var a2 = this.__calcNextLeading__(), c2 = t2.prototype.parseOnlyString.call(this, e3, r2, o(o({}, n2), { calcLeading: i2, leadingSpace: this.leadingSpace + a2, layer: this.layer + 1 }));
+              return this.isFirstSubTag ? c2.replace(this.leadingSpace + a2, "") : c2;
             }, e2.prototype.beforeReturn = function(e3) {
               return t2.prototype.beforeReturn.call(this, e3);
             }, e2.prototype.exec = function(e3, r2) {
@@ -1246,7 +1247,7 @@ var { doExport } = (() => {
           e.default = s;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -1272,7 +1273,7 @@ var { doExport } = (() => {
             }).apply(this, arguments);
           };
           Object.defineProperty(e, "__esModule", { value: true });
-          var i = r(0), a = r(5), c = r(1), u = r(2), s = function(t2) {
+          var i = r(0), a = r(5), u = r(1), c = r(2), s = function(t2) {
             function e2(e3, r2, n2) {
               void 0 === r2 && (r2 = "ol");
               var o2, i2 = this;
@@ -1283,17 +1284,17 @@ var { doExport } = (() => {
             return n(e2, t2), e2.prototype.__isValidSubTag__ = function(t3) {
               if (!t3)
                 return false;
-              var e3 = u.default.get().aliasTags, r2 = (0, c.getTagConstructor)(t3);
+              var e3 = c.default.get().aliasTags, r2 = (0, u.getTagConstructor)(t3);
               return "li" === t3 || "li" == (null === e3 || void 0 === e3 ? void 0 : e3[t3]) || r2 === a.default;
             }, e2.prototype.getValidSubTagName = function(t3) {
               return t3 && this.__isValidSubTag__(t3) ? t3 : null;
             }, e2.prototype.parseValidSubTag = function(t3, e3, r2) {
-              var n2 = (0, c.getTagConstructor)(e3);
+              var n2 = (0, u.getTagConstructor)(e3);
               if (this.__isValidSubTag__(e3)) {
                 var i2 = this.count + ".", a2 = new n2(t3, e3, o(o({}, r2), { calcLeading: true, leadingSpace: this.leadingSpace, layer: this.layer, match: i2 }));
                 return this.count++, a2.exec("", "\n");
               }
-              return console.error("Should not have tags except <li> inside ol, current tag is " + e3 + ", current tagStr is" + t3), "";
+              return "";
             }, e2.prototype.parseOnlyString = function() {
               return "";
             }, e2.prototype.exec = function(e3, r2) {
@@ -1303,7 +1304,7 @@ var { doExport } = (() => {
           e.default = s;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -1335,7 +1336,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -1361,11 +1362,11 @@ var { doExport } = (() => {
             }).apply(this, arguments);
           };
           Object.defineProperty(e, "__esModule", { value: true });
-          var i = r(0), a = r(7), c = r(1), u = r(12), s = function(t2) {
+          var i = r(0), a = r(7), u = r(1), c = r(12), s = function(t2) {
             function e2(e3, r2, n2) {
               void 0 === r2 && (r2 = "pre");
               var o2 = t2.call(this, e3, r2, n2) || this;
-              return o2.indentSpace = u.DOUBLE + u.DOUBLE, o2.isIndent = o2.innerHTML.includes("```"), o2.match = o2.isIndent ? "" : "```", o2.language = o2.language || (0, c.getLanguage)(e3), o2.keepSpace = true, o2;
+              return o2.indentSpace = c.DOUBLE + c.DOUBLE, o2.isIndent = o2.innerHTML.includes("```"), o2.match = o2.isIndent ? "" : "```", o2.language = o2.language || (0, u.getLanguage)(e3), o2.keepSpace = true, o2;
             }
             return n(e2, t2), e2.prototype.beforeMergeSpace = function(t3) {
               var e3 = this.isIndent || "code" === this.parentTag ? "" : this.match + this.language + "\n", r2 = "";
@@ -1380,8 +1381,8 @@ var { doExport } = (() => {
               })).join("\n");
             }, e2.prototype.parseValidSubTag = function(t3, e3, r2) {
               if ("code" === e3)
-                return new ((0, c.getTagConstructor)(e3))(t3, e3, o(o({}, r2), { match: "", language: this.language, keepSpace: true })).exec("", "");
-              return ((0, c.isSelfClosing)(e3) ? new a.__EmptySelfClose__(t3, e3) : new a.__Empty__(t3, e3, o(o({}, r2), { keepSpace: true }))).exec();
+                return new ((0, u.getTagConstructor)(e3))(t3, e3, o(o({}, r2), { match: "", language: this.language, keepSpace: true })).exec("", "");
+              return ((0, u.isSelfClosing)(e3) ? new a.__EmptySelfClose__(t3, e3) : new a.__Empty__(t3, e3, o(o({}, r2), { keepSpace: true }))).exec();
             }, e2.prototype.parseOnlyString = function(t3) {
               return t3;
             }, e2.prototype.slim = function(t3) {
@@ -1393,7 +1394,7 @@ var { doExport } = (() => {
           e.default = s;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -1423,7 +1424,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -1453,7 +1454,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -1480,7 +1481,7 @@ var { doExport } = (() => {
           };
           Object.defineProperty(e, "__esModule", { value: true });
           var i = r(0), a = r(1);
-          var c = function(t2) {
+          var u = function(t2) {
             function e2(e3, r2, n2) {
               void 0 === r2 && (r2 = "table");
               var o2 = t2.call(this, e3, r2, n2) || this;
@@ -1509,10 +1510,10 @@ var { doExport } = (() => {
               return void 0 === e3 && (e3 = "\n"), void 0 === r2 && (r2 = "\n"), t2.prototype.exec.call(this, e3, r2);
             }, e2;
           }(i.default);
-          e.default = c;
+          e.default = u;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -1548,7 +1549,7 @@ var { doExport } = (() => {
           e.default = a;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -1580,7 +1581,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -1610,7 +1611,7 @@ var { doExport } = (() => {
           e.default = o;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -1629,25 +1630,25 @@ var { doExport } = (() => {
             };
           }();
           Object.defineProperty(e, "__esModule", { value: true });
-          var o = r(0), i = r(5), a = r(1), c = r(2), u = function(t2) {
+          var o = r(0), i = r(5), a = r(1), u = r(2), c = function(t2) {
             function e2(e3, r2, n2) {
               return void 0 === r2 && (r2 = "tr"), t2.call(this, e3, r2, n2) || this;
             }
             return n(e2, t2), e2.prototype.beforeMergeSpace = function(t3) {
               return "|" + t3;
             }, e2.prototype.parseValidSubTag = function(t3, e3, r2) {
-              var n2 = c.default.get().aliasTags, o2 = (0, a.getTagConstructor)(e3);
-              return "td" !== e3 && "th" !== e3 && "td" !== (null === n2 || void 0 === n2 ? void 0 : n2[e3]) && "th" !== (null === n2 || void 0 === n2 ? void 0 : n2[e3]) && o2 !== i.default ? (console.error("Should not have tags except <td> or <th> inside <tr>, current tag is ".concat(e3, " have been ignore.")), "") : new o2(t3, e3, r2).exec("", "");
+              var n2 = u.default.get().aliasTags, o2 = (0, a.getTagConstructor)(e3);
+              return "td" !== e3 && "th" !== e3 && "td" !== (null === n2 || void 0 === n2 ? void 0 : n2[e3]) && "th" !== (null === n2 || void 0 === n2 ? void 0 : n2[e3]) && o2 !== i.default ? ("Should not have tags except <td> or <th> inside <tr>, current tag is ".concat(e3, " have been ignore."), "") : new o2(t3, e3, r2).exec("", "");
             }, e2.prototype.parseOnlyString = function() {
               return "";
             }, e2.prototype.exec = function(e3, r2) {
               return void 0 === e3 && (e3 = ""), void 0 === r2 && (r2 = "\n"), t2.prototype.exec.call(this, e3, r2);
             }, e2;
           }(o.default);
-          e.default = u;
+          e.default = c;
         }, function(t, e, r) {
           "use strict";
-          var n = this && this.__extends || function() {
+          var n = this && this.__extends || /* @__PURE__ */ function() {
             var t2 = function(e2, r2) {
               return (t2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(t3, e3) {
                 t3.__proto__ = e3;
@@ -1673,20 +1674,20 @@ var { doExport } = (() => {
             }).apply(this, arguments);
           };
           Object.defineProperty(e, "__esModule", { value: true });
-          var i = r(0), a = r(5), c = r(1), u = r(2).default.get().aliasTags, s = function(t2) {
+          var i = r(0), a = r(5), u = r(1), c = r(2).default.get().aliasTags, s = function(t2) {
             function e2(e3, r2, n2) {
               return void 0 === r2 && (r2 = "ul"), t2.call(this, e3, r2, n2) || this;
             }
             return n(e2, t2), e2.prototype.__isValidSubTag__ = function(t3) {
               if (!t3)
                 return false;
-              var e3 = (0, c.getTagConstructor)(t3);
-              return "li" === t3 || "li" == (null === u || void 0 === u ? void 0 : u[t3]) || e3 === a.default;
+              var e3 = (0, u.getTagConstructor)(t3);
+              return "li" === t3 || "li" == (null === c || void 0 === c ? void 0 : c[t3]) || e3 === a.default;
             }, e2.prototype.getValidSubTagName = function(t3) {
               return t3 && this.__isValidSubTag__(t3) ? t3 : null;
             }, e2.prototype.parseValidSubTag = function(t3, e3, r2) {
-              var n2 = (0, c.getTagConstructor)(e3);
-              return this.__isValidSubTag__(e3) ? new n2(t3, e3, o(o({}, r2), { calcLeading: true, leadingSpace: this.leadingSpace, layer: this.layer, match: "*" })).exec("", "\n") : (console.error("Should not have tags except <li> inside ul, current tag is " + e3 + ", current tagStr is" + t3), "");
+              var n2 = (0, u.getTagConstructor)(e3);
+              return this.__isValidSubTag__(e3) ? new n2(t3, e3, o(o({}, r2), { calcLeading: true, leadingSpace: this.leadingSpace, layer: this.layer, match: "*" })).exec("", "\n") : "";
             }, e2.prototype.parseOnlyString = function() {
               return "";
             }, e2.prototype.exec = function(e3, r2) {
@@ -1700,19 +1701,19 @@ var { doExport } = (() => {
           var n = r(1), o = r(2), i = r(9);
           e.default = function(t2, e2, r2) {
             void 0 === r2 && (r2 = false), o.default.reset(), o.default.set(e2, r2), t2 = (t2 = (t2 = (0, n.clearComment)(t2)).trim()).replace(/(\r\n)/g, "").replace(/&nbsp;/g, " ");
-            for (var a = (0, n.generateGetNextValidTag)(t2), c = "", u = null, s = a(), l = s[0], p = s[1]; "" !== p; ) {
+            for (var a = (0, n.generateGetNextValidTag)(t2), u = "", c = null, s = a(), l = s[0], p = s[1]; "" !== p; ) {
               if (null != l) {
-                var f = new ((0, n.getTagConstructor)(l))(p, l, { parentTag: null, prevTagName: u, prevTagStr: c }).exec(), h = (0, n.isIndependentTag)(u);
-                !(0, n.isIndependentTag)(l) || h || c.endsWith("\n") ? c += f : c += "\n" + f;
+                var f = new ((0, n.getTagConstructor)(l))(p, l, { parentTag: null, prevTagName: c, prevTagStr: u }).exec(), h = (0, n.isIndependentTag)(c);
+                !(0, n.isIndependentTag)(l) || h || u.endsWith("\n") ? u += f : u += "\n" + f;
               } else
-                c = (c += new i.default(p, l).exec()).replace(/(?:\n\s*)$/, "\n");
-              u = l;
+                u = (u += new i.default(p, l).exec()).replace(/(?:\n\s*)$/, "\n");
+              c = l;
               var d = a();
               l = d[0], p = d[1];
             }
             return function(t3) {
               return t3 = (t3 = (t3 = t3.replace(/^\s+/, "")).replace(/\s+$/, "")).replace(/\u2608/g, " ");
-            }((0, n.unescapeStr)(c));
+            }((0, n.unescapeStr)(u));
           };
         }, function(t, e, r) {
           "use strict";
@@ -1720,13 +1721,13 @@ var { doExport } = (() => {
           var n = {}, o = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;", "`": "&#x60;", "\u201C": "&ldquo;", "\u201D": "&rdquo;" };
           for (var i in o)
             n[o[i]] = i;
-          var a = /&(?:amp|lt|gt|quot|#39|#x60|ldquo|rdquo);/g, c = RegExp(a.source), u = [[/\\/g, "\\\\"], [/\*/g, "\\*"], [/^-/g, "\\-"], [/^\+ /g, "\\+ "], [/^(=+)/g, "\\$1"], [/^(#{1,6}) /g, "\\$1 "], [/`/g, "\\`"], [/^~~~/g, "\\~~~"], [/\[/g, "\\["], [/\]/g, "\\]"], [/^>/g, "\\>"], [/_/g, "\\_"], [/^(\d+)\. /g, "$1\\. "]];
+          var a = /&(?:amp|lt|gt|quot|#39|#x60|ldquo|rdquo);/g, u = RegExp(a.source), c = [[/\\/g, "\\\\"], [/\*/g, "\\*"], [/^-/g, "\\-"], [/^\+ /g, "\\+ "], [/^(=+)/g, "\\$1"], [/^(#{1,6}) /g, "\\$1 "], [/`/g, "\\`"], [/^~~~/g, "\\~~~"], [/\[/g, "\\["], [/\]/g, "\\]"], [/^>/g, "\\>"], [/_/g, "\\_"], [/^(\d+)\. /g, "$1\\. "]];
           e.unescapeStr = function(t2) {
-            return t2 = t2 && c.test(t2) ? t2.replace(a, function(t3) {
+            return t2 = t2 && u.test(t2) ? t2.replace(a, function(t3) {
               return n[t3];
             }) : t2;
           }, e.extraEscape = function(t2) {
-            return u.reduce(function(t3, e2) {
+            return c.reduce(function(t3, e2) {
               return t3.replace(e2[0], e2[1]);
             }, t2);
           };
@@ -1742,28 +1743,28 @@ var { doExport } = (() => {
           e.default = function(t2) {
             var e2 = 0;
             return function() {
-              var r2 = "", i = null, a = 0, c = null, u = false;
+              var r2 = "", i = null, a = 0, u = null, c = false;
               if (e2 >= t2.length)
                 return [i, r2];
               for (var s = e2; s < t2.length; s++) {
                 if ("<" === t2[s] && "/" !== t2[s + 1]) {
-                  if ("" !== r2 && null == i && !u)
+                  if ("" !== r2 && null == i && !c)
                     return e2 = s, [i, r2];
                   var l = o(t2, s + 1);
-                  null == i && (i = l), i === l && a++, (0, n.default)(i) && (0 === --a && (u = true), a < 0 && console.warn("Tag ".concat(i, " is abnormal")));
+                  null == i && (i = l), i === l && a++, (0, n.default)(i) && (0 === --a && (c = true), a < 0 && "Tag ".concat(i, " is abnormal"));
                 } else if ("<" === t2[s] && "/" === t2[s + 1]) {
                   if (null == i) {
-                    console.warn("Tag is not integrity, current tagStr is ".concat(t2.slice(e2)));
+                    "Tag is not integrity, current tagStr is ".concat(t2.slice(e2));
                     for (var p = s; p < t2.length && ">" !== t2[p]; )
                       p++;
                     s = p;
                     continue;
                   }
-                  i === (c = o(t2, s + 2)) && a--, a <= 0 && (u = true);
+                  i === (u = o(t2, s + 2)) && a--, a <= 0 && (c = true);
                 }
-                if (r2 += t2[s], ">" === t2[s] && u)
+                if (r2 += t2[s], ">" === t2[s] && c)
                   return e2 = s + 1, [i, r2];
-                s === t2.length - 1 && i !== c && (null != c && null != i && (r2 = r2.replace("<".concat(i, ">"), "").replace("</".concat(c, ">"), "")), i = null);
+                s === t2.length - 1 && i !== u && (null != u && null != i && (r2 = r2.replace("<".concat(i, ">"), "").replace("</".concat(u, ">"), "")), i = null);
               }
               return e2 = t2.length, [i, r2];
             };
@@ -1773,8 +1774,8 @@ var { doExport } = (() => {
           Object.defineProperty(e, "__esModule", { value: true });
           var n = r(2), o = r(11), i = r(49);
           e.default = function t2(e2) {
-            var a, c = n.default.get(), u = c.skipTags, s = c.emptyTags, l = c.ignoreTags, p = c.aliasTags, f = c.renderCustomTags, h = (0, o.default)(e2);
-            if (null === u || void 0 === u ? void 0 : u.includes(e2)) {
+            var a, u = n.default.get(), c = u.skipTags, s = u.emptyTags, l = u.ignoreTags, p = u.aliasTags, f = u.renderCustomTags, h = (0, o.default)(e2);
+            if (null === c || void 0 === c ? void 0 : c.includes(e2)) {
               var d = r(8);
               return h ? d.__SkipSelfClose__ : d.__Skip__;
             }
@@ -1831,8 +1832,8 @@ var { doExport } = (() => {
             for (var e2 = {}, r2 = false, n = "", o = "", i = null, a = 0; a <= t2.length; a++) {
               if (a === t2.length || /\s/.test(t2[a])) {
                 if (a === t2.length || !r2) {
-                  var c = n.trim();
-                  "/" === c[c.length - 1] && (c = c.slice(0, c.length - 1)), c && (e2[c] = o.trim()), n = "", o = "";
+                  var u = n.trim();
+                  "/" === u[u.length - 1] && (u = u.slice(0, u.length - 1)), u && (e2[u] = o.trim()), n = "", o = "";
                 }
               } else {
                 if (/['"]/.test(t2[a]) && (!i || t2[a] === i)) {
@@ -4543,7 +4544,7 @@ var { doExport } = (() => {
           CSL2.configureMacro.call(this, mytarget);
         }
         if (!this.build.extension) {
-          var func = function(macro_name) {
+          var func = /* @__PURE__ */ function(macro_name) {
             return function(state, Item, item) {
               var next = 0;
               while (next < state.macros[macro_name].length) {
@@ -10170,7 +10171,7 @@ var { doExport } = (() => {
               var choose_start = new CSL2.Token("choose", CSL2.START);
               CSL2.Node.choose.build.call(choose_start, state, target);
               var if_start = new CSL2.Token("if", CSL2.START);
-              func = function(macroName) {
+              func = /* @__PURE__ */ function(macroName) {
                 return function(Item, item) {
                   return CSL2.INIT_JURISDICTION_MACROS(state, Item, item, macroName);
                 };
@@ -20705,7 +20706,7 @@ var { doExport } = (() => {
         }
         return ret;
       };
-      CSL2.ParticleList = function() {
+      CSL2.ParticleList = /* @__PURE__ */ function() {
         var always_dropping_1 = [[[0, 1], null]];
         var always_dropping_3 = [[[0, 3], null]];
         var always_non_dropping_1 = [[null, [0, 1]]];
@@ -20943,7 +20944,7 @@ var { doExport } = (() => {
         ];
         return PARTICLES;
       }();
-      CSL2.parseParticles = function() {
+      CSL2.parseParticles = /* @__PURE__ */ function() {
         function splitParticles(nameValue, firstNameFlag, caseOverride) {
           var origNameValue = nameValue;
           nameValue = caseOverride ? nameValue.toLowerCase() : nameValue;
@@ -21097,6 +21098,7 @@ var { doExport } = (() => {
     importBibTeXStrings: true,
     importCaseProtection: "as-needed",
     importCitationKey: true,
+    importDetectURLs: true,
     importExtra: true,
     importJabRefAbbreviations: true,
     importJabRefStrings: true,
@@ -21114,7 +21116,6 @@ var { doExport } = (() => {
     logEvents: true,
     mapMath: "",
     mapText: "",
-    mapUnicode: "conservative",
     parseParticles: true,
     patchDates: "dateadded=dateAdded, date-added=dateAdded, datemodified=dateModified, date-modified=dateModified",
     platform: "",
@@ -21167,7 +21168,6 @@ var { doExport } = (() => {
       "language",
       "mapMath",
       "mapText",
-      "mapUnicode",
       "parseParticles",
       "postscript",
       "qualityReport",
@@ -21202,7 +21202,6 @@ var { doExport } = (() => {
       "language",
       "mapMath",
       "mapText",
-      "mapUnicode",
       "parseParticles",
       "postscript",
       "qualityReport",
@@ -21289,25 +21288,20 @@ var { doExport } = (() => {
       "language": "language",
       "both": "both"
     },
-    "mapUnicode": {
-      "minimal-packages": "Minimize additional latex packages required",
-      "conservative": "Minimize the number of switches between math-mode and text-mode",
-      "text": "Prefer text-mode replacements",
-      "math": "Prefer math-mode replacements",
-      "creator": "Add braces to accented characters to assist simplistic latex parsers"
-    },
     "quickCopyMode": {
       "latex": "LaTeX citation",
       "citekeys": "Cite Keys",
-      "pandoc": "Pandoc citation",
-      "orgmode": "Org-mode select link",
+      "eta": "Eta template",
+      "gitbook": "GitBook",
       "orgRef": "org-ref citation",
       "orgRef3": "org-ref v3 citation",
-      "rtfScan": "RTF Scan marker",
+      "orgmode": "Org-mode select link",
+      "pandoc": "Pandoc citation",
       "roamCiteKey": "Roam Cite Key",
-      "gitbook": "GitBook",
+      "rtfScan": "RTF Scan marker",
       "selectlink": "Zotero select link",
-      "eta": "Eta template"
+      "jupyter": "Jupyter notebook",
+      "jekyll": "Jekyll cite"
     },
     "quickCopyOrgMode": {
       "zotero": "using Zotero item key",
@@ -21316,538 +21310,6 @@ var { doExport } = (() => {
     "quickCopySelectLink": {
       "zotero": "using Zotero item key",
       "citationkey": "using Better BibTeX citation key"
-    }
-  };
-  var schema = {
-    "autoExport": {
-      "preferences": [
-        "asciiBibLaTeX",
-        "biblatexExtendedNameFormat",
-        "bibtexURL",
-        "DOIandURL"
-      ],
-      "displayOptions": [
-        "exportNotes",
-        "useJournalAbbreviation"
-      ]
-    },
-    "translator": {
-      "Better BibLaTeX": {
-        "autoexport": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "type": {
-              "enum": [
-                "collection",
-                "library"
-              ]
-            },
-            "id": {
-              "type": "integer"
-            },
-            "path": {
-              "type": "string",
-              "minLength": 1
-            },
-            "status": {
-              "enum": [
-                "scheduled",
-                "running",
-                "done",
-                "error"
-              ]
-            },
-            "translatorID": {
-              "const": "f895aa0d-f28e-47fe-b247-2ea77c6ed583"
-            },
-            "exportNotes": {
-              "type": "boolean"
-            },
-            "useJournalAbbreviation": {
-              "type": "boolean"
-            },
-            "asciiBibLaTeX": {
-              "type": "boolean"
-            },
-            "biblatexExtendedNameFormat": {
-              "type": "boolean"
-            },
-            "DOIandURL": {
-              "enum": [
-                "both",
-                "doi",
-                "url"
-              ]
-            },
-            "error": {
-              "type": "string"
-            },
-            "recursive": {
-              "type": "boolean"
-            },
-            "meta": {
-              "type": "object"
-            },
-            "$loki": {
-              "type": "integer"
-            }
-          },
-          "required": [
-            "type",
-            "id",
-            "path",
-            "status",
-            "translatorID",
-            "exportNotes",
-            "useJournalAbbreviation",
-            "asciiBibLaTeX",
-            "biblatexExtendedNameFormat",
-            "DOIandURL"
-          ]
-        },
-        "cache": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "itemID": {
-              "type": "integer"
-            },
-            "entry": {
-              "type": "string"
-            },
-            "exportNotes": {
-              "type": "boolean"
-            },
-            "useJournalAbbreviation": {
-              "type": "boolean"
-            },
-            "asciiBibLaTeX": {
-              "type": "boolean"
-            },
-            "biblatexExtendedNameFormat": {
-              "type": "boolean"
-            },
-            "DOIandURL": {
-              "enum": [
-                "both",
-                "doi",
-                "url"
-              ]
-            },
-            "metadata": {
-              "type": "object"
-            },
-            "meta": {
-              "type": "object"
-            },
-            "$loki": {
-              "type": "integer"
-            }
-          },
-          "required": [
-            "itemID",
-            "exportNotes",
-            "useJournalAbbreviation",
-            "asciiBibLaTeX",
-            "biblatexExtendedNameFormat",
-            "DOIandURL",
-            "entry"
-          ]
-        },
-        "preferences": [
-          "asciiBibLaTeX",
-          "biblatexExtendedNameFormat",
-          "DOIandURL"
-        ],
-        "displayOptions": [
-          "exportNotes",
-          "useJournalAbbreviation"
-        ]
-      },
-      "Better BibTeX": {
-        "autoexport": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "type": {
-              "enum": [
-                "collection",
-                "library"
-              ]
-            },
-            "id": {
-              "type": "integer"
-            },
-            "path": {
-              "type": "string",
-              "minLength": 1
-            },
-            "status": {
-              "enum": [
-                "scheduled",
-                "running",
-                "done",
-                "error"
-              ]
-            },
-            "translatorID": {
-              "const": "ca65189f-8815-4afe-8c8b-8c7c15f0edca"
-            },
-            "exportNotes": {
-              "type": "boolean"
-            },
-            "useJournalAbbreviation": {
-              "type": "boolean"
-            },
-            "bibtexURL": {
-              "enum": [
-                "off",
-                "note",
-                "note-url-ish",
-                "url",
-                "url-ish"
-              ]
-            },
-            "DOIandURL": {
-              "enum": [
-                "both",
-                "doi",
-                "url"
-              ]
-            },
-            "error": {
-              "type": "string"
-            },
-            "recursive": {
-              "type": "boolean"
-            },
-            "meta": {
-              "type": "object"
-            },
-            "$loki": {
-              "type": "integer"
-            }
-          },
-          "required": [
-            "type",
-            "id",
-            "path",
-            "status",
-            "translatorID",
-            "exportNotes",
-            "useJournalAbbreviation",
-            "bibtexURL",
-            "DOIandURL"
-          ]
-        },
-        "cache": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "itemID": {
-              "type": "integer"
-            },
-            "entry": {
-              "type": "string"
-            },
-            "exportNotes": {
-              "type": "boolean"
-            },
-            "useJournalAbbreviation": {
-              "type": "boolean"
-            },
-            "bibtexURL": {
-              "enum": [
-                "off",
-                "note",
-                "note-url-ish",
-                "url",
-                "url-ish"
-              ]
-            },
-            "DOIandURL": {
-              "enum": [
-                "both",
-                "doi",
-                "url"
-              ]
-            },
-            "metadata": {
-              "type": "object"
-            },
-            "meta": {
-              "type": "object"
-            },
-            "$loki": {
-              "type": "integer"
-            }
-          },
-          "required": [
-            "itemID",
-            "exportNotes",
-            "useJournalAbbreviation",
-            "bibtexURL",
-            "DOIandURL",
-            "entry"
-          ]
-        },
-        "preferences": [
-          "bibtexURL",
-          "DOIandURL"
-        ],
-        "displayOptions": [
-          "exportNotes",
-          "useJournalAbbreviation"
-        ]
-      },
-      "Better CSL JSON": {
-        "autoexport": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "type": {
-              "enum": [
-                "collection",
-                "library"
-              ]
-            },
-            "id": {
-              "type": "integer"
-            },
-            "path": {
-              "type": "string",
-              "minLength": 1
-            },
-            "status": {
-              "enum": [
-                "scheduled",
-                "running",
-                "done",
-                "error"
-              ]
-            },
-            "translatorID": {
-              "const": "f4b52ab0-f878-4556-85a0-c7aeedd09dfc"
-            },
-            "exportNotes": {
-              "type": "boolean"
-            },
-            "useJournalAbbreviation": {
-              "type": "boolean"
-            },
-            "error": {
-              "type": "string"
-            },
-            "recursive": {
-              "type": "boolean"
-            },
-            "meta": {
-              "type": "object"
-            },
-            "$loki": {
-              "type": "integer"
-            }
-          },
-          "required": [
-            "type",
-            "id",
-            "path",
-            "status",
-            "translatorID"
-          ]
-        },
-        "cache": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "itemID": {
-              "type": "integer"
-            },
-            "entry": {
-              "type": "string"
-            },
-            "exportNotes": {
-              "type": "boolean"
-            },
-            "useJournalAbbreviation": {
-              "type": "boolean"
-            },
-            "metadata": {
-              "type": "object"
-            },
-            "meta": {
-              "type": "object"
-            },
-            "$loki": {
-              "type": "integer"
-            }
-          },
-          "required": [
-            "itemID",
-            "exportNotes",
-            "useJournalAbbreviation",
-            "entry"
-          ]
-        },
-        "preferences": [],
-        "displayOptions": []
-      },
-      "Better CSL YAML": {
-        "autoexport": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "type": {
-              "enum": [
-                "collection",
-                "library"
-              ]
-            },
-            "id": {
-              "type": "integer"
-            },
-            "path": {
-              "type": "string",
-              "minLength": 1
-            },
-            "status": {
-              "enum": [
-                "scheduled",
-                "running",
-                "done",
-                "error"
-              ]
-            },
-            "translatorID": {
-              "const": "0f238e69-043e-4882-93bf-342de007de19"
-            },
-            "exportNotes": {
-              "type": "boolean"
-            },
-            "useJournalAbbreviation": {
-              "type": "boolean"
-            },
-            "error": {
-              "type": "string"
-            },
-            "recursive": {
-              "type": "boolean"
-            },
-            "meta": {
-              "type": "object"
-            },
-            "$loki": {
-              "type": "integer"
-            }
-          },
-          "required": [
-            "type",
-            "id",
-            "path",
-            "status",
-            "translatorID"
-          ]
-        },
-        "cache": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "itemID": {
-              "type": "integer"
-            },
-            "entry": {
-              "type": "string"
-            },
-            "exportNotes": {
-              "type": "boolean"
-            },
-            "useJournalAbbreviation": {
-              "type": "boolean"
-            },
-            "metadata": {
-              "type": "object"
-            },
-            "meta": {
-              "type": "object"
-            },
-            "$loki": {
-              "type": "integer"
-            }
-          },
-          "required": [
-            "itemID",
-            "exportNotes",
-            "useJournalAbbreviation",
-            "entry"
-          ]
-        },
-        "preferences": [],
-        "displayOptions": []
-      },
-      "BetterBibTeX JSON": {
-        "autoexport": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "type": {
-              "enum": [
-                "collection",
-                "library"
-              ]
-            },
-            "id": {
-              "type": "integer"
-            },
-            "path": {
-              "type": "string",
-              "minLength": 1
-            },
-            "status": {
-              "enum": [
-                "scheduled",
-                "running",
-                "done",
-                "error"
-              ]
-            },
-            "translatorID": {
-              "const": "36a3b0b5-bad0-4a04-b79b-441c7cef77db"
-            },
-            "exportNotes": {
-              "type": "boolean"
-            },
-            "useJournalAbbreviation": {
-              "type": "boolean"
-            },
-            "error": {
-              "type": "string"
-            },
-            "recursive": {
-              "type": "boolean"
-            },
-            "meta": {
-              "type": "object"
-            },
-            "$loki": {
-              "type": "integer"
-            }
-          },
-          "required": [
-            "type",
-            "id",
-            "path",
-            "status",
-            "translatorID",
-            "exportNotes"
-          ]
-        },
-        "cache": false,
-        "preferences": [],
-        "displayOptions": [
-          "exportNotes"
-        ]
-      }
     }
   };
 
@@ -22181,7 +21643,7 @@ var { doExport } = (() => {
         translation.preferences.separatorList = ` ${translation.preferences.separatorList} `;
         translation.preferences.separatorNames = ` ${translation.preferences.separatorNames} `;
       }
-      if (translation.preferences.testing && typeof __estrace === "undefined" && ((_d = schema.translator[translator.label]) == null ? void 0 : _d.cache)) {
+      if (translation.preferences.testing && typeof __estrace === "undefined" && ((_d = translator.configOptions) == null ? void 0 : _d.cached)) {
         const allowedPreferences = affectedBy[translator.label].concat(["testing"]).reduce((acc, pref) => {
           acc[pref] = translation.preferences[pref];
           return acc;

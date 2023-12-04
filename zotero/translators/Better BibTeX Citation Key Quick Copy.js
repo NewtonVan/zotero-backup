@@ -5,6 +5,7 @@
 	"creator": "Emiliano heyns",
 	"target": "txt",
 	"minVersion": "4.0.27",
+	"maxVersion": "",
 	"translatorType": 2,
 	"browserSupport": "gcsv",
 	"priority": 100,
@@ -13,15 +14,15 @@
 	},
 	"inRepository": false,
 	"configOptions": {
-		"hash": "59802fd9d0ad1b3403f011975e4bffaaa69aa4e5dec29b6d4f9468b334959ee5"
+		"hash": "e61d1de41da4bc6d08aea841499f15afde9f628b3edee6fcbc807fcd98dd9861"
 	},
-	"lastUpdated": "2023-08-29"
+	"lastUpdated": "2023-11-21"
 }
 
 ZOTERO_CONFIG = {"GUID":"zotero@chnm.gmu.edu","ID":"zotero","CLIENT_NAME":"Zotero","DOMAIN_NAME":"zotero.org","PRODUCER":"Digital Scholar","PRODUCER_URL":"https://digitalscholar.org","REPOSITORY_URL":"https://repo.zotero.org/repo/","BASE_URI":"http://zotero.org/","WWW_BASE_URL":"https://www.zotero.org/","PROXY_AUTH_URL":"https://zoteroproxycheck.s3.amazonaws.com/test","API_URL":"https://api.zotero.org/","STREAMING_URL":"wss://stream.zotero.org/","SERVICES_URL":"https://services.zotero.org/","API_VERSION":3,"CONNECTOR_MIN_VERSION":"5.0.39","PREF_BRANCH":"extensions.zotero.","BOOKMARKLET_ORIGIN":"https://www.zotero.org","BOOKMARKLET_URL":"https://www.zotero.org/bookmarklet/","START_URL":"https://www.zotero.org/start","QUICK_START_URL":"https://www.zotero.org/support/quick_start_guide","PDF_TOOLS_URL":"https://www.zotero.org/download/xpdf/","SUPPORT_URL":"https://www.zotero.org/support/","SYNC_INFO_URL":"https://www.zotero.org/support/sync","TROUBLESHOOTING_URL":"https://www.zotero.org/support/getting_help","FEEDBACK_URL":"https://forums.zotero.org/","CONNECTORS_URL":"https://www.zotero.org/download/connectors","CHANGELOG_URL":"https://www.zotero.org/support/changelog","CREDITS_URL":"https://www.zotero.org/support/credits_and_acknowledgments","LICENSING_URL":"https://www.zotero.org/support/licensing","GET_INVOLVED_URL":"https://www.zotero.org/getinvolved","DICTIONARIES_URL":"https://download.zotero.org/dictionaries/"}
 
         if (typeof ZOTERO_TRANSLATOR_INFO === 'undefined') var ZOTERO_TRANSLATOR_INFO = {}; // declare if not declared
-        Object.assign(ZOTERO_TRANSLATOR_INFO, {"translatorID":"a515a220-6fef-45ea-9842-8025dfebcc8f","label":"Better BibTeX Citation Key Quick Copy","description":"exports citations to be copy-pasted into your LaTeX/Markdown /Org-mode/etc documents","creator":"Emiliano heyns","target":"txt","minVersion":"4.0.27","translatorType":2,"browserSupport":"gcsv","priority":100,"displayOptions":{"quickCopyMode":""},"inRepository":false}); // assign new data
+        Object.assign(ZOTERO_TRANSLATOR_INFO, {"translatorID":"a515a220-6fef-45ea-9842-8025dfebcc8f","label":"Better BibTeX Citation Key Quick Copy","description":"exports citations to be copy-pasted into your LaTeX/Markdown /Org-mode/etc documents","creator":"Emiliano heyns","target":"txt","minVersion":"4.0.27","maxVersion":"","translatorType":2,"browserSupport":"gcsv","priority":100,"displayOptions":{"quickCopyMode":""},"inRepository":false}); // assign new data
       
 var { doExport } = (() => {
   var __defProp = Object.defineProperty;
@@ -807,6 +808,27 @@ return __eta.res;
   function select_by_citekey(item) {
     return `zotero://select/items/@${encodeURIComponent(item.citationKey)}`;
   }
+  function escapeHtml(unsafe) {
+    return unsafe.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+  function authorOf(item) {
+    const creators = item.creators || [];
+    const creator = creators[0] || {};
+    let name = creator.name || creator.lastName || "no author";
+    if (creators.length > 1)
+      name += " et al.";
+    return name;
+  }
+  function yearOf(item) {
+    if (!item.date)
+      return "no date";
+    let date = Zotero.BetterBibTeX.parseDate(item.date);
+    if (date.type === "interval")
+      date = date.from;
+    if (date.type === "verbatim" || !date.year)
+      return item.date;
+    return `${date.year}`;
+  }
   var Mode = {
     // eslint-disable-next-line prefer-arrow/prefer-arrow-functions
     gitbook(items) {
@@ -875,29 +897,16 @@ return __eta.res;
     rtfScan(items) {
       const reference = items.map((item) => {
         const ref = [];
-        const creators = item.creators || [];
-        const creator = creators[0] || {};
-        let name = creator.name || creator.lastName || "no author";
-        if (creators.length > 1)
-          name += " et al.";
-        ref.push(name);
+        ref.push(authorOf(item));
         if (item.title)
           ref.push(JSON.stringify(item.title));
-        if (item.date) {
-          let date = Zotero.BetterBibTeX.parseDate(item.date);
-          if (date.type === "interval")
-            date = date.from;
-          if (date.type === "verbatim" || !date.year) {
-            ref.push(item.date);
-          } else {
-            ref.push(date.year);
-          }
-        } else {
-          ref.push("no date");
-        }
+        ref.push(yearOf(item));
         return ref.join(", ");
       });
       Zotero.write(`{${reference.join("; ")}}`);
+    },
+    jupyter(items) {
+      Zotero.write(items.map((item) => `<cite data-cite="${escapeHtml(item.citationKey)}">(${escapeHtml(authorOf(item))}, ${escapeHtml(yearOf(item))})</cite>`).join(""));
     },
     eta(items) {
       try {
@@ -905,6 +914,9 @@ return __eta.res;
       } catch (err) {
         Zotero.write(`${err}`);
       }
+    },
+    jekyll(items) {
+      Zotero.write(items.map((item) => `{% cite ${item.citationKey} %}`).join(""));
     }
   };
   function doExport() {
