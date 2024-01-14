@@ -13,13 +13,13 @@
 	"configOptions": {
 		"getCollections": true,
 		"cached": true,
-		"hash": "83d377f3c8e98e769054e9753e814d20e6452fec0937044a7fc2bc0c0196ff1d"
+		"hash": "4460bbe9cbd7d074682519cf79530ff346b8932d5257859584bb3b7a705f9146"
 	},
 	"translatorType": 3,
 	"browserSupport": "gcsv",
 	"priority": 800,
 	"inRepository": false,
-	"lastUpdated": "2023-11-21"
+	"lastUpdated": "2024-01-04"
 }
 
 ZOTERO_CONFIG = {"GUID":"zotero@chnm.gmu.edu","ID":"zotero","CLIENT_NAME":"Zotero","DOMAIN_NAME":"zotero.org","PRODUCER":"Digital Scholar","PRODUCER_URL":"https://digitalscholar.org","REPOSITORY_URL":"https://repo.zotero.org/repo/","BASE_URI":"http://zotero.org/","WWW_BASE_URL":"https://www.zotero.org/","PROXY_AUTH_URL":"https://zoteroproxycheck.s3.amazonaws.com/test","API_URL":"https://api.zotero.org/","STREAMING_URL":"wss://stream.zotero.org/","SERVICES_URL":"https://services.zotero.org/","API_VERSION":3,"CONNECTOR_MIN_VERSION":"5.0.39","PREF_BRANCH":"extensions.zotero.","BOOKMARKLET_ORIGIN":"https://www.zotero.org","BOOKMARKLET_URL":"https://www.zotero.org/bookmarklet/","START_URL":"https://www.zotero.org/start","QUICK_START_URL":"https://www.zotero.org/support/quick_start_guide","PDF_TOOLS_URL":"https://www.zotero.org/download/xpdf/","SUPPORT_URL":"https://www.zotero.org/support/","SYNC_INFO_URL":"https://www.zotero.org/support/sync","TROUBLESHOOTING_URL":"https://www.zotero.org/support/getting_help","FEEDBACK_URL":"https://forums.zotero.org/","CONNECTORS_URL":"https://www.zotero.org/download/connectors","CHANGELOG_URL":"https://www.zotero.org/support/changelog","CREDITS_URL":"https://www.zotero.org/support/credits_and_acknowledgments","LICENSING_URL":"https://www.zotero.org/support/licensing","GET_INVOLVED_URL":"https://www.zotero.org/getinvolved","DICTIONARIES_URL":"https://download.zotero.org/dictionaries/"}
@@ -81,6 +81,7 @@ var { detectImport, doExport, doImport } = (() => {
     cacheFlushInterval: 5,
     charmap: "",
     citeCommand: "cite",
+    citekeyCaseInsensitive: true,
     citekeyFold: true,
     citekeyFormat: "auth.lower + shorttitle(3,3) + year",
     citekeyFormatEditing: "",
@@ -548,6 +549,7 @@ var { detectImport, doExport, doImport } = (() => {
           this.options[key] = !!Zotero.getOption(key);
         }
       }
+      this.options.custom = Zotero.getOption("custom");
       this.preferences = Object.entries(defaults).reduce((acc, [pref, dflt]) => {
         var _a;
         acc[pref] = (_a = Zotero.getHiddenPref(`better-bibtex.${pref}`)) != null ? _a : dflt;
@@ -645,7 +647,7 @@ var { detectImport, doExport, doImport } = (() => {
         translation.preferences.separatorNames = ` ${translation.preferences.separatorNames} `;
       }
       if (translation.preferences.testing && typeof __estrace === "undefined" && ((_d = translator.configOptions) == null ? void 0 : _d.cached)) {
-        const allowedPreferences = affectedBy[translator.label].concat(["testing"]).reduce((acc, pref) => {
+        const allowedPreferences = (translator.label === "BetterBibTeX JSON" ? Object.keys(defaults) : affectedBy[translator.label]).concat(["testing"]).reduce((acc, pref) => {
           acc[pref] = translation.preferences[pref];
           return acc;
         }, {});
