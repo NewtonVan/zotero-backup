@@ -10,7 +10,7 @@
 		"async": true,
 		"getCollections": true,
 		"cached": true,
-		"hash": "a52991f8209d5948025a0d7b66d137fba30e39d92de73e16231b091a017ea3f2"
+		"hash": "8e1a61f5b2bc62f214675403c6abb511ca3c3a36759b1738cc3c207698f04ef9"
 	},
 	"displayOptions": {
 		"exportNotes": false,
@@ -23,7 +23,7 @@
 	"browserSupport": "gcsv",
 	"priority": 199,
 	"inRepository": false,
-	"lastUpdated": "2024-01-04"
+	"lastUpdated": "2024-01-21"
 }
 
 ZOTERO_CONFIG = {"GUID":"zotero@chnm.gmu.edu","ID":"zotero","CLIENT_NAME":"Zotero","DOMAIN_NAME":"zotero.org","PRODUCER":"Digital Scholar","PRODUCER_URL":"https://digitalscholar.org","REPOSITORY_URL":"https://repo.zotero.org/repo/","BASE_URI":"http://zotero.org/","WWW_BASE_URL":"https://www.zotero.org/","PROXY_AUTH_URL":"https://zoteroproxycheck.s3.amazonaws.com/test","API_URL":"https://api.zotero.org/","STREAMING_URL":"wss://stream.zotero.org/","SERVICES_URL":"https://services.zotero.org/","API_VERSION":3,"CONNECTOR_MIN_VERSION":"5.0.39","PREF_BRANCH":"extensions.zotero.","BOOKMARKLET_ORIGIN":"https://www.zotero.org","BOOKMARKLET_URL":"https://www.zotero.org/bookmarklet/","START_URL":"https://www.zotero.org/start","QUICK_START_URL":"https://www.zotero.org/support/quick_start_guide","PDF_TOOLS_URL":"https://www.zotero.org/download/xpdf/","SUPPORT_URL":"https://www.zotero.org/support/","SYNC_INFO_URL":"https://www.zotero.org/support/sync","TROUBLESHOOTING_URL":"https://www.zotero.org/support/getting_help","FEEDBACK_URL":"https://forums.zotero.org/","CONNECTORS_URL":"https://www.zotero.org/download/connectors","CHANGELOG_URL":"https://www.zotero.org/support/changelog","CREDITS_URL":"https://www.zotero.org/support/credits_and_acknowledgments","LICENSING_URL":"https://www.zotero.org/support/licensing","GET_INVOLVED_URL":"https://www.zotero.org/getinvolved","DICTIONARIES_URL":"https://download.zotero.org/dictionaries/"}
@@ -122,6 +122,7 @@ var { detectImport, doExport, doImport } = (() => {
     logEvents: true,
     mapMath: "",
     mapText: "",
+    packages: "textcomp,amsmath",
     parseParticles: true,
     patchDates: "dateadded=dateAdded, date-added=dateAdded, datemodified=dateModified, date-modified=dateModified",
     platform: "",
@@ -174,6 +175,7 @@ var { detectImport, doExport, doImport } = (() => {
       "language",
       "mapMath",
       "mapText",
+      "packages",
       "parseParticles",
       "postscript",
       "qualityReport",
@@ -208,6 +210,7 @@ var { detectImport, doExport, doImport } = (() => {
       "language",
       "mapMath",
       "mapText",
+      "packages",
       "parseParticles",
       "postscript",
       "qualityReport",
@@ -567,9 +570,9 @@ var { detectImport, doExport, doImport } = (() => {
       if (override.override("strings", ".bib"))
         this.cacheable = false;
       try {
-        this.texmap = JSON.parse(this.preferences.charmap);
+        this.charmap = JSON.parse(this.preferences.charmap);
       } catch (err) {
-        this.texmap = {};
+        this.charmap = {};
       }
       this.importToExtra = {};
       this.preferences.importNoteToExtra.toLowerCase().split(/\s*,\s*/).filter((field) => field).forEach((field) => {
